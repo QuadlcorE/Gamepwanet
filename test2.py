@@ -22,4 +22,4 @@ def scout(url):
     
 
 
-scout("https://api.rawg.io/api/collections/lists/popular?key=9584bc037067422aad0275f5f6af6650")
+#scout("https://api.rawg.io/api/collections/lists/popular?key=9584bc037067422aad0275f5f6af6650")
