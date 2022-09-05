@@ -13,3 +13,20 @@ header
     font-family: 'Righteous', serif;
     color: white;
 }
+
+.background-img
+{
+    max-width:100%;
+    max-height:auto;
+}
+
+.image-holder
+{
+    display:flex;
+    justify-content:center;
+}
+
+main
+{
+    background-color: $grey-900;
+}
