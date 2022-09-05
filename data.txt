@@ -1,0 +1,264 @@
+{
+    "achievements_count": 0,
+    "added": 464,
+    "added_by_status": {
+        "beaten": 1,
+        "dropped": 2,
+        "owned": 61,
+        "playing": 1,
+        "toplay": 313,
+        "yet": 86
+    },
+    "additions_count": 0,
+    "alternative_names": [],
+    "background_image": "https://media.rawg.io/media/games/cd0/cd074f3f6045297cda9ad077273c09b6.jpg",
+    "background_image_additional": "https://media.rawg.io/media/screenshots/024/0242e1034034c7d3b6728eaae820741e.jpg",
+    "clip": null,
+    "creators_count": 0,
+    "description": "<p>A Plague Tale: Requiem is the direct sequel to A Plague Tale: Innocence. Previously, players lived the grim tale of young Amicia and her little brother Hugo, in a heartrending adventure through the darkest hours of history. Hunted by Inquisition soldiers and surrounded by unstoppable swarms of rats, Amicia and Hugo came to know and trust each other, as they struggled to survive against overwhelming odds and fight to find their place in the world.</p>",
+    "description_raw": "A Plague Tale: Requiem is the direct sequel to A Plague Tale: Innocence. Previously, players lived the grim tale of young Amicia and her little brother Hugo, in a heartrending adventure through the darkest hours of history. Hunted by Inquisition soldiers and surrounded by unstoppable swarms of rats, Amicia and Hugo came to know and trust each other, as they struggled to survive against overwhelming odds and fight to find their place in the world.",
+    "developers": [
+        {
+            "games_count": 17,
+            "id": 10903,
+            "image_background": "https://media.rawg.io/media/games/cd0/cd074f3f6045297cda9ad077273c09b6.jpg",
+            "name": "Asobo Studio",
+            "slug": "asobo-studio"
+        }
+    ],
+    "dominant_color": "0f0f0f",
+    "esrb_rating": {
+        "id": 4,
+        "name": "Mature",
+        "slug": "mature"
+    },
+    "game_series_count": 1,
+    "genres": [
+        {
+            "games_count": 160701,
+            "id": 4,
+            "image_background": "https://media.rawg.io/media/games/4be/4be6a6ad0364751a96229c56bf69be59.jpg",
+            "name": "Action",
+            "slug": "action"
+        },
+        {
+            "games_count": 121992,
+            "id": 3,
+            "image_background": "https://media.rawg.io/media/games/4e6/4e6e8e7f50c237d76f38f3c885dae3d2.jpg",
+            "name": "Adventure",
+            "slug": "adventure"
+        }
+    ],
+    "id": 616697,
+    "metacritic": null,
+    "metacritic_platforms": [],
+    "metacritic_url": "https://www.metacritic.com/game/xbox-series-x/a-plague-tale-requiem",
+    "movies_count": 0,
+    "name": "A Plague Tale: Requiem",
+    "name_original": "A Plague Tale: Requiem",
+    "parent_achievements_count": 0,
+    "parent_platforms": [
+        {
+            "platform": {
+                "id": 1,
+                "name": "PC",
+                "slug": "pc"
+            }
+        },
+        {
+            "platform": {
+                "id": 2,
+                "name": "PlayStation",
+                "slug": "playstation"
+            }
+        },
+        {
+            "platform": {
+                "id": 3,
+                "name": "Xbox",
+                "slug": "xbox"
+            }
+        },
+        {
+            "platform": {
+                "id": 7,
+                "name": "Nintendo",
+                "slug": "nintendo"
+            }
+        }
+    ],
+    "parents_count": 0,
+    "platforms": [
+        {
+            "platform": {
+                "games_count": 663,
+                "id": 187,
+                "image": null,
+                "image_background": "https://media.rawg.io/media/games/618/618c2031a07bbff6b4f611f10b6bcdbc.jpg",
+                "name": "PlayStation 5",
+                "slug": "playstation5",
+                "year_end": null,
+                "year_start": 2020
+            },
+            "released_at": "2022-10-18",
+            "requirements": {}
+        },
+        {
+            "platform": {
+                "games_count": 599,
+                "id": 186,
+                "image": null,
+                "image_background": "https://media.rawg.io/media/games/d47/d479582ed0a46496ad34f65c7099d7e5.jpg",
+                "name": "Xbox Series S/X",
+                "slug": "xbox-series-x",
+                "year_end": null,
+                "year_start": 2020
+            },
+            "released_at": "2022-10-18",
+            "requirements": {}
+        },
+        {
+            "platform": {
+                "games_count": 6463,
+                "id": 18,
+                "image": null,
+                "image_background": "https://media.rawg.io/media/games/d1a/d1a2e99ade53494c6330a0ed945fe823.jpg",
+                "name": "PlayStation 4",
+                "slug": "playstation4",
+                "year_end": null,
+                "year_start": null
+            },
+            "released_at": "2022-10-18",
+            "requirements": {}
+        },
+        {
+            "platform": {
+                "games_count": 4955,
+                "id": 7,
+                "image": null,
+                "image_background": "https://media.rawg.io/media/games/b72/b7233d5d5b1e75e86bb860ccc7aeca85.jpg",
+                "name": "Nintendo Switch",
+                "slug": "nintendo-switch",
+                "year_end": null,
+                "year_start": null
+            },
+            "released_at": "2022-10-18",
+            "requirements": {}
+        },
+        {
+            "platform": {
+                "games_count": 478530,
+                "id": 4,
+                "image": null,
+                "image_background": "https://media.rawg.io/media/games/d58/d588947d4286e7b5e0e12e1bea7d9844.jpg",
+                "name": "PC",
+                "slug": "pc",
+                "year_end": null,
+                "year_start": null
+            },
+            "released_at": "2022-10-18",
+            "requirements": {}
+        },
+        {
+            "platform": {
+                "games_count": 5385,
+                "id": 1,
+                "image": null,
+                "image_background": "https://media.rawg.io/media/games/fc1/fc1307a2774506b5bd65d7e8424664a7.jpg",
+                "name": "Xbox One",
+                "slug": "xbox-one",
+                "year_end": null,
+                "year_start": null
+            },
+            "released_at": "2022-10-18",
+            "requirements": {}
+        }
+    ],
+    "playtime": 0,
+    "publishers": [
+        {
+            "games_count": 152,
+            "id": 713,
+            "image_background": "https://media.rawg.io/media/games/5f2/5f25cf08217b40b9d8f02f95db1fdc1d.jpg",
+            "name": "Focus Home Interactive",
+            "slug": "focus-home-interactive"
+        }
+    ],
+    "rating": 3.44,
+    "rating_top": 4,
+    "ratings": [
+        {
+            "count": 4,
+            "id": 4,
+            "percent": 44.44,
+            "title": "recommended"
+        },
+        {
+            "count": 2,
+            "id": 5,
+            "percent": 22.22,
+            "title": "exceptional"
+        },
+        {
+            "count": 2,
+            "id": 1,
+            "percent": 22.22,
+            "title": "skip"
+        },
+        {
+            "count": 1,
+            "id": 3,
+            "percent": 11.11,
+            "title": "meh"
+        }
+    ],
+    "ratings_count": 8,
+    "reactions": {
+        "5": 1
+    },
+    "reddit_count": 0,
+    "reddit_description": "",
+    "reddit_logo": "",
+    "reddit_name": "",
+    "reddit_url": "",
+    "released": "2022-10-18",
+    "reviews_count": 9,
+    "reviews_text_count": 1,
+    "saturated_color": "0f0f0f",
+    "screenshots_count": 14,
+    "slug": "a-plague-tale-requiem",
+    "stores": [
+        {
+            "id": 611310,
+            "store": {
+                "domain": "store.steampowered.com",
+                "games_count": 66622,
+                "id": 1,
+                "image_background": "https://media.rawg.io/media/games/618/618c2031a07bbff6b4f611f10b6bcdbc.jpg",
+                "name": "Steam",
+                "slug": "steam"
+            },
+            "url": ""
+        },
+        {
+            "id": 754545,
+            "store": {
+                "domain": "gog.com",
+                "games_count": 4390,
+                "id": 5,
+                "image_background": "https://media.rawg.io/media/games/f46/f466571d536f2e3ea9e815ad17177501.jpg",
+                "name": "GOG",
+                "slug": "gog"
+            },
+            "url": ""
+        }
+    ],
+    "suggestions_count": 293,
+    "tags": [],
+    "tba": false,
+    "twitch_count": 6,
+    "updated": "2022-07-17T21:49:53",
+    "user_game": null,
+    "website": "https://www.focus-home.com/en-us/games/a-plague-tale-requiem",
+    "youtube_count": 0
+}

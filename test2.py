@@ -20,6 +20,9 @@ def scout(url):
     #while jprint(response.json()["next"]) != 'null':
     #    scout(response.json()["next"])
     
-
+def write_txt(data):
+    txt = json.dumps(data, sort_keys=True, indent=4)
+    with open("data.txt", "w") as f:
+        f.write(txt)
 
 #scout("https://api.rawg.io/api/collections/lists/popular?key=9584bc037067422aad0275f5f6af6650")
