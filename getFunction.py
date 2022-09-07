@@ -9,7 +9,7 @@ def get_top_games():
     '''
 
     param = {
-        "page_size" : "10",
+        "page_size" : "3",
         "dates" : "2022-01-01,2022-12-31",
         "ordering" : "-added"
     }
