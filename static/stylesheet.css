@@ -1,34 +1,65 @@
-.nav-link 
-    {
+.nav-link {
     font-family: 'Righteous', serif;
-    }
+}
 
-button 
-    {
+button {
         font-family: 'Righteous', serif;
-    }
+}
 
-header 
-{
+header {
     font-family: 'Righteous', serif;
     color: white;
 }
 
-.background-img
-{
+
+@media screen and (min-width: 601px) {
+    .gp-r {
+      font-size: xx-large;
+    }
+  }
+@media screen and (max-width: 600px) {
+    .gp-r {
+      font-size: x-large;
+    }
+  }
+
+.background-img {
     width:100%;
     height:100%;
     object-fit: cover;
     object-position: center;
 }
 
-.image-holder
-{
+.image-holder {
     display:flex;
     justify-content:center;
 }
 
-main
-{
+main{
     background-color: $grey-900;
+}
+
+@media all and (min-width: 992px) {
+	.navbar .nav-item .dropdown-menu{ display: none; }
+	.navbar .nav-item:hover .nav-link{   }
+	.navbar .nav-item:hover .dropdown-menu{ display: block; }
+	.navbar .nav-item .dropdown-menu{ margin-top:0; }
+}	
+
+
+.dropdown-toggle::after {
+    content: none;
+}
+
+.dropbtn {
+    border: none;
+}
+  
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-item {
+    color: white;
 }
