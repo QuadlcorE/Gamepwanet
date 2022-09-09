@@ -2,8 +2,16 @@
     font-family: 'Righteous', serif;
 }
 
+.btn {
+    font-family: 'Righteous', serif;
+}
+
+p{
+    font-family: 'Righteous', serif;
+}
+
 button {
-        font-family: 'Righteous', serif;
+    font-family: 'Righteous', serif;
 }
 
 header {
@@ -11,13 +19,42 @@ header {
     color: white;
 }
 
+
 .name-tags {
     font-family: 'Righteous', serif;
     font-size: xx-large;
-    color: white;
+    color: rgb(184, 184, 184);
+    transition: 0.5s;
+    word-wrap: break-word;
+    white-space: normal;
 }
+
 .name-tags:hover {
-    color: cornflowerblue;
+    color: white;
+    font-size: 180%;
+    word-spacing: 5px;
+    word-wrap: break-word;
+    white-space: normal;
+}
+
+.card-text{
+    color: rgb(184, 184, 184);
+}
+
+.teepee .card {
+    margin-right: auto;
+    margin-left: auto;
+    /*box-shadow: 0 15px 25px rgba(129, 124, 124, 0.2);*/
+    /*border-radius: 5px;*/
+    backdrop-filter: blur(2px);
+    background-color: rgba(0, 0, 0, 0.2);
+    /*padding: 10px;*/
+    text-align: left;
+    transition: 1s;
+}
+
+.teepee .card:hover {
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 
@@ -32,6 +69,7 @@ header {
     }
   }
 
+
 .background-img {
     width:100%;
     height:100%;
@@ -43,6 +81,7 @@ header {
     display:flex;
     justify-content:center;
 }
+
 
 main{
     background-color: $grey-900;
@@ -73,8 +112,20 @@ main{
     color: white;
 }
 
-input[type=search]
-{
+.btn-primary {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 50px;
+    transition: 0.5s;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    font-size: larger;
+}
+
+
+input[type=search]{
     color: #666157;
     background: #343a40;
     font-size: 16px;
@@ -87,4 +138,9 @@ input[type=search]
     border: none;
     border-top: none;
     border-left: none;
+    transition: 0.5s;
 }
+
+ input[type=search]:hover {
+    background-color: white;
+ }

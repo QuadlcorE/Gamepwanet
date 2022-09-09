@@ -1,12 +1,12 @@
 {
     "achievements_count": 55,
-    "added": 2789,
+    "added": 2795,
     "added_by_status": {
         "beaten": 306,
         "dropped": 24,
-        "owned": 1409,
+        "owned": 1413,
         "playing": 80,
-        "toplay": 769,
+        "toplay": 771,
         "yet": 201
     },
     "additions_count": 0,

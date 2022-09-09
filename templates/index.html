@@ -25,7 +25,19 @@
                     <img class="background-img" src="{{ game['background'] }}">
                   <div class="container">
                     <div class="carousel-caption text-start">
-                      <a class="navbar-brand name-tags" href="#" >{{game['name']}}</a>
+                      <div class="teepee">
+                        <div class="container">
+                        <div class="card">
+                          <div class="card-body">
+                            <h5 class="card-title"><a class="navbar-brand name-tags" href="#" >{{game['name']}}</a></h5>
+                            <p class="card-text">Released: {{ game['released'] }}</p>
+                            <p class="card-text">Metacritic: {{ game['metacritic'] }}</p>
+                            
+                          </div>
+                        </div>
+                        </div>
+                      </div>
+                      
                       
                     </div>
                   </div>
@@ -51,7 +63,7 @@
         <div class="album py-5 bg-dark">
           <div class="container">
             <div>
-              
+
             </div>
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
               <div class="col">
