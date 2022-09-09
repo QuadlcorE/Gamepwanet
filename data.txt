@@ -1,13 +1,13 @@
 {
     "achievements_count": 55,
-    "added": 2766,
+    "added": 2789,
     "added_by_status": {
-        "beaten": 303,
+        "beaten": 306,
         "dropped": 24,
-        "owned": 1388,
+        "owned": 1409,
         "playing": 80,
-        "toplay": 768,
-        "yet": 203
+        "toplay": 769,
+        "yet": 201
     },
     "additions_count": 0,
     "alternative_names": [],
@@ -42,16 +42,16 @@
     "game_series_count": 0,
     "genres": [
         {
-            "games_count": 160701,
+            "games_count": 160702,
             "id": 4,
-            "image_background": "https://media.rawg.io/media/games/4be/4be6a6ad0364751a96229c56bf69be59.jpg",
+            "image_background": "https://media.rawg.io/media/games/73e/73eecb8909e0c39fb246f457b5d6cbbe.jpg",
             "name": "Action",
             "slug": "action"
         },
         {
-            "games_count": 121992,
+            "games_count": 122001,
             "id": 3,
-            "image_background": "https://media.rawg.io/media/games/4e6/4e6e8e7f50c237d76f38f3c885dae3d2.jpg",
+            "image_background": "https://media.rawg.io/media/games/2ad/2ad87a4a69b1104f02435c14c5196095.jpg",
             "name": "Adventure",
             "slug": "adventure"
         },
@@ -65,14 +65,14 @@
         {
             "games_count": 46985,
             "id": 51,
-            "image_background": "https://media.rawg.io/media/games/63f/63f0e68688cad279ed38cde931dbfcdb.jpg",
+            "image_background": "https://media.rawg.io/media/games/b6b/b6b20bfc4b34e312dbc8aac53c95a348.jpg",
             "name": "Indie",
             "slug": "indie"
         },
         {
-            "games_count": 91144,
+            "games_count": 91145,
             "id": 7,
-            "image_background": "https://media.rawg.io/media/games/d03/d030347839f74454afcd1008248b08ae.jpg",
+            "image_background": "https://media.rawg.io/media/games/9f4/9f418898f5415668ca47b5f4ab1ecfeb.jpg",
             "name": "Puzzle",
             "slug": "puzzle"
         },
@@ -131,10 +131,10 @@
     "platforms": [
         {
             "platform": {
-                "games_count": 478530,
+                "games_count": 478535,
                 "id": 4,
                 "image": null,
-                "image_background": "https://media.rawg.io/media/games/d58/d588947d4286e7b5e0e12e1bea7d9844.jpg",
+                "image_background": "https://media.rawg.io/media/games/7fa/7fa0b586293c5861ee32490e953a4996.jpg",
                 "name": "PC",
                 "slug": "pc",
                 "year_end": null,
@@ -148,10 +148,10 @@
         },
         {
             "platform": {
-                "games_count": 663,
+                "games_count": 665,
                 "id": 187,
                 "image": null,
-                "image_background": "https://media.rawg.io/media/games/618/618c2031a07bbff6b4f611f10b6bcdbc.jpg",
+                "image_background": "https://media.rawg.io/media/games/739/73990e3ec9f43a9e8ecafe207fa4f368.jpg",
                 "name": "PlayStation 5",
                 "slug": "playstation5",
                 "year_end": null,
@@ -162,10 +162,10 @@
         },
         {
             "platform": {
-                "games_count": 6463,
+                "games_count": 6461,
                 "id": 18,
                 "image": null,
-                "image_background": "https://media.rawg.io/media/games/d1a/d1a2e99ade53494c6330a0ed945fe823.jpg",
+                "image_background": "https://media.rawg.io/media/games/26d/26d4437715bee60138dab4a7c8c59c92.jpg",
                 "name": "PlayStation 4",
                 "slug": "playstation4",
                 "year_end": null,
@@ -185,35 +185,35 @@
             "slug": "annapurna-interactive"
         }
     ],
-    "rating": 4.38,
+    "rating": 4.37,
     "rating_top": 5,
     "ratings": [
         {
-            "count": 167,
+            "count": 169,
             "id": 5,
-            "percent": 53.7,
+            "percent": 53.48,
             "title": "exceptional"
         },
         {
-            "count": 113,
+            "count": 114,
             "id": 4,
-            "percent": 36.33,
+            "percent": 36.08,
             "title": "recommended"
         },
         {
-            "count": 22,
+            "count": 24,
             "id": 3,
-            "percent": 7.07,
+            "percent": 7.59,
             "title": "meh"
         },
         {
             "count": 9,
             "id": 1,
-            "percent": 2.89,
+            "percent": 2.85,
             "title": "skip"
         }
     ],
-    "ratings_count": 299,
+    "ratings_count": 304,
     "reactions": {
         "1": 4,
         "13": 1,
@@ -228,7 +228,7 @@
     "reddit_name": "Stray - for PS4, PS5, and PC",
     "reddit_url": "https://www.reddit.com/r/stray/",
     "released": "2022-07-19",
-    "reviews_count": 311,
+    "reviews_count": 316,
     "reviews_text_count": 12,
     "saturated_color": "0f0f0f",
     "screenshots_count": 3,
@@ -238,9 +238,9 @@
             "id": 799865,
             "store": {
                 "domain": "store.playstation.com",
-                "games_count": 7792,
+                "games_count": 7791,
                 "id": 3,
-                "image_background": "https://media.rawg.io/media/games/f87/f87457e8347484033cb34cde6101d08d.jpg",
+                "image_background": "https://media.rawg.io/media/games/736/73619bd336c894d6941d926bfd563946.jpg",
                 "name": "PlayStation Store",
                 "slug": "playstation-store"
             },
@@ -250,9 +250,9 @@
             "id": 443772,
             "store": {
                 "domain": "store.steampowered.com",
-                "games_count": 66622,
+                "games_count": 66629,
                 "id": 1,
-                "image_background": "https://media.rawg.io/media/games/618/618c2031a07bbff6b4f611f10b6bcdbc.jpg",
+                "image_background": "https://media.rawg.io/media/games/46d/46d98e6910fbc0706e2948a7cc9b10c5.jpg",
                 "name": "Steam",
                 "slug": "steam"
             },
@@ -318,9 +318,9 @@
             "slug": "third-person"
         },
         {
-            "games_count": 15423,
+            "games_count": 15424,
             "id": 32,
-            "image_background": "https://media.rawg.io/media/games/b8c/b8c243eaa0fbac8115e0cdccac3f91dc.jpg",
+            "image_background": "https://media.rawg.io/media/games/ebd/ebdbb7eb52bd58b0e7fa4538d9757b60.jpg",
             "language": "eng",
             "name": "Sci-fi",
             "slug": "sci-fi"
@@ -334,9 +334,9 @@
             "slug": "horror"
         },
         {
-            "games_count": 16709,
+            "games_count": 16710,
             "id": 6,
-            "image_background": "https://media.rawg.io/media/games/baf/baf9905270314e07e6850cffdb51df41.jpg",
+            "image_background": "https://media.rawg.io/media/games/4cf/4cfc6b7f1850590a4634b08bfab308ab.jpg",
             "language": "eng",
             "name": "Exploration",
             "slug": "exploration"
@@ -382,9 +382,9 @@
             "slug": "colorful"
         },
         {
-            "games_count": 3588,
+            "games_count": 3589,
             "id": 226,
-            "image_background": "https://media.rawg.io/media/screenshots/7f8/7f8b58994fc420fefaa5fb9992335a11.jpg",
+            "image_background": "https://media.rawg.io/media/screenshots/ca0/ca06700d8184f451b99396c23b4ffbe4.jpg",
             "language": "eng",
             "name": "Cyberpunk",
             "slug": "cyberpunk"
@@ -448,7 +448,7 @@
     ],
     "tba": false,
     "twitch_count": 6,
-    "updated": "2022-09-07T23:14:49",
+    "updated": "2022-09-09T04:02:13",
     "user_game": null,
     "website": "https://stray.game/",
     "youtube_count": 1000000

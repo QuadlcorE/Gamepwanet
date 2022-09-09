@@ -72,3 +72,19 @@ main{
 .dropdown-item {
     color: white;
 }
+
+input[type=search]
+{
+    color: #666157;
+    background: #343a40;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    height: 45px;
+    padding: 6px 30px;
+    border-radius: 50px;
+    box-shadow: none;
+    border: none;
+    border-top: none;
+    border-left: none;
+}
