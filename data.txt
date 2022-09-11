@@ -1,13 +1,13 @@
 {
     "achievements_count": 55,
-    "added": 2795,
+    "added": 2816,
     "added_by_status": {
-        "beaten": 306,
-        "dropped": 24,
-        "owned": 1413,
+        "beaten": 309,
+        "dropped": 25,
+        "owned": 1429,
         "playing": 80,
-        "toplay": 771,
-        "yet": 201
+        "toplay": 770,
+        "yet": 203
     },
     "additions_count": 0,
     "alternative_names": [],
@@ -189,31 +189,31 @@
     "rating_top": 5,
     "ratings": [
         {
-            "count": 169,
+            "count": 171,
             "id": 5,
-            "percent": 53.48,
+            "percent": 53.11,
             "title": "exceptional"
         },
         {
-            "count": 114,
+            "count": 118,
             "id": 4,
-            "percent": 36.08,
+            "percent": 36.65,
             "title": "recommended"
         },
         {
             "count": 24,
             "id": 3,
-            "percent": 7.59,
+            "percent": 7.45,
             "title": "meh"
         },
         {
             "count": 9,
             "id": 1,
-            "percent": 2.85,
+            "percent": 2.8,
             "title": "skip"
         }
     ],
-    "ratings_count": 304,
+    "ratings_count": 310,
     "reactions": {
         "1": 4,
         "13": 1,
@@ -228,7 +228,7 @@
     "reddit_name": "Stray - for PS4, PS5, and PC",
     "reddit_url": "https://www.reddit.com/r/stray/",
     "released": "2022-07-19",
-    "reviews_count": 316,
+    "reviews_count": 322,
     "reviews_text_count": 12,
     "saturated_color": "0f0f0f",
     "screenshots_count": 3,
@@ -448,7 +448,7 @@
     ],
     "tba": false,
     "twitch_count": 6,
-    "updated": "2022-09-09T04:02:13",
+    "updated": "2022-09-11T09:36:46",
     "user_game": null,
     "website": "https://stray.game/",
     "youtube_count": 1000000
