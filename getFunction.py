@@ -1,16 +1,17 @@
 import requests 
 import json
 
-from test2 import jprint, write_txt
+from test2 import jprint, write_txt, current_month, current_year
 
-def get_top_games():
+def get_top_games(number):
     '''Returns a list of dictionaries of the top 5 popular games
     dictionary contains id, slug, name, released, metacritic, playtime.
     '''
 
+    year = current_year()
     param = {
-        "page_size" : "3",
-        "dates" : "2022-01-01,2022-12-31",
+        "page_size" : number,
+        "dates" : f"{year}-01-01,{year}-12-31",
         "ordering" : "-added"
     }
 
@@ -33,6 +34,23 @@ def get_top_games():
 
     return games
 
+def get_top_games_this_month(number):
+    '''Returns a list containing dictionaries of top added games for the current month.
+    Dictionaries same as get game_info.
+    '''
+    year = current_year()
+    month = current_month()
+    param = {
+        "pagesize" : number,
+        "dates" : f"{year}-{month}-01,{year}-{month}-30",
+        "ordering" : "-added"
+    }
+    
+    url = "https://api.rawg.io/api/games?key=9584bc037067422aad0275f5f6af6650"
+
+    response = requests.get(url, params=param)
+    data = response.json()
+    return data
 
 def get_latest_releases():
     ''' To Do '''
@@ -59,7 +77,7 @@ def get_game_background(game_pk):
     Where game_pk = slug of the game
     '''
     game_info = get_game_info(game_pk)
-    print(game_info["background_image"])
+    #print(game_info["background_image"])
     return game_info["background_image"]
 
 
@@ -87,7 +105,13 @@ def get_game_info(game_id):
     #jprint(data)
     return data
 
+
+listing = get_top_games_this_month(2) 
+for game in listing["results"]:
+    jprint(game)
+    
+
 #get_top_games()
 #get_game_screenshots("lost-ark")
-get_game_background("a-plague-tale-requiem")
+#get_game_background("a-plague-tale-requiem")
 #get_game_info("a-plague-tale-requiem")
