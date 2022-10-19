@@ -1,81 +1,67 @@
 {
-    "achievements_count": 30,
-    "added": 4501,
+    "achievements_count": 149,
+    "added": 2035,
     "added_by_status": {
-        "beaten": 362,
-        "dropped": 103,
-        "owned": 2909,
-        "playing": 203,
-        "toplay": 695,
-        "yet": 229
+        "beaten": 97,
+        "dropped": 37,
+        "owned": 984,
+        "playing": 43,
+        "toplay": 666,
+        "yet": 208
     },
     "additions_count": 0,
-    "alternative_names": [],
-    "background_image": "https://media.rawg.io/media/games/5ec/5ecac5cb026ec26a56efcc546364e348.jpg",
-    "background_image_additional": "https://media.rawg.io/media/screenshots/ac2/ac2d75c1b2ed0db7f12528a77a15fcea.jpg",
+    "alternative_names": [
+        "Dying Light 2 Stay Human"
+    ],
+    "background_image": "https://media.rawg.io/media/games/73d/73db43df633477d4604c7248292f34b2.jpg",
+    "background_image_additional": "https://media.rawg.io/media/screenshots/97b/97b0e4b2e62218645eab82db11c6cd07.jpg",
     "clip": null,
-    "creators_count": 8,
-    "description": "<p>The Golden Order has been broken.</p>\n<p>Rise, Tarnished, and be guided by grace to brandish the power of the Elden Ring and become an Elden Lord in the Lands Between.</p>\n<p>In the Lands Between ruled by Queen Marika the Eternal, the Elden Ring, the source of the Erdtree, has been shattered.</p>\n<p>Marika&#39;s offspring, demigods all, claimed the shards of the Elden Ring known as the Great Runes, and the mad taint of their newfound strength triggered a war: The Shattering. A war that meant abandonment by the Greater Will.</p>\n<p>And now the guidance of grace will be brought to the Tarnished who were spurned by the grace of gold and exiled from the Lands Between. Ye dead who yet live, your grace long lost, follow the path to the Lands Between beyond the foggy sea to stand before the Elden Ring.</p>",
-    "description_raw": "The Golden Order has been broken.\n\nRise, Tarnished, and be guided by grace to brandish the power of the Elden Ring and become an Elden Lord in the Lands Between.\n\nIn the Lands Between ruled by Queen Marika the Eternal, the Elden Ring, the source of the Erdtree, has been shattered.\n\nMarika's offspring, demigods all, claimed the shards of the Elden Ring known as the Great Runes, and the mad taint of their newfound strength triggered a war: The Shattering. A war that meant abandonment by the Greater Will.\n\nAnd now the guidance of grace will be brought to the Tarnished who were spurned by the grace of gold and exiled from the Lands Between. Ye dead who yet live, your grace long lost, follow the path to the Lands Between beyond the foggy sea to stand before the Elden Ring.",
+    "creators_count": 11,
+    "description": "<p>Dying Light 2 brings to life a unique post-apocalyptic vision of the Modern Dark Ages - a brutal, bleak and unforgiving reality where you are as likely to perish at the hand of a human as you are by the infected. </p>\n<p>In this exhausted world, your quick thinking, exceptional parkour abilities and brutal combat skills are the only things that let you dive into darkness and emerge alive. Make morally grey decisions and witness how they impact the world at multiple levels, shape the transformation of the City, and ultimately decide its fate.</p>",
+    "description_raw": "Dying Light 2 brings to life a unique post-apocalyptic vision of the Modern Dark Ages - a brutal, bleak and unforgiving reality where you are as likely to perish at the hand of a human as you are by the infected. \r\n\r\nIn this exhausted world, your quick thinking, exceptional parkour abilities and brutal combat skills are the only things that let you dive into darkness and emerge alive. Make morally grey decisions and witness how they impact the world at multiple levels, shape the transformation of the City, and ultimately decide its fate.",
     "developers": [
         {
-            "games_count": 67,
-            "id": 6763,
-            "image_background": "https://media.rawg.io/media/games/061/061befe7ddaca9f09969bd5e7b7b98ca.jpg",
-            "name": "FromSoftware",
-            "slug": "fromsoftware"
+            "games_count": 50,
+            "id": 4303,
+            "image_background": "https://media.rawg.io/media/games/a41/a4126f8dc70a3e664b18b983722ed082.jpg",
+            "name": "Techland",
+            "slug": "techland"
         }
     ],
     "dominant_color": "0f0f0f",
-    "esrb_rating": {
-        "id": 4,
-        "name": "Mature",
-        "slug": "mature"
-    },
-    "game_series_count": 0,
+    "esrb_rating": null,
+    "game_series_count": 1,
     "genres": [
         {
-            "games_count": 161516,
+            "games_count": 164441,
             "id": 4,
-            "image_background": "https://media.rawg.io/media/games/7cf/7cfc9220b401b7a300e409e539c9afd5.jpg",
+            "image_background": "https://media.rawg.io/media/games/d82/d82990b9c67ba0d2d09d4e6fa88885a7.jpg",
             "name": "Action",
             "slug": "action"
         },
         {
-            "games_count": 49213,
+            "games_count": 125105,
+            "id": 3,
+            "image_background": "https://media.rawg.io/media/games/4e6/4e6e8e7f50c237d76f38f3c885dae3d2.jpg",
+            "name": "Adventure",
+            "slug": "adventure"
+        },
+        {
+            "games_count": 50059,
             "id": 5,
-            "image_background": "https://media.rawg.io/media/games/530/5302dd22a190e664531236ca724e8726.jpg",
+            "image_background": "https://media.rawg.io/media/games/618/618c2031a07bbff6b4f611f10b6bcdbc.jpg",
             "name": "RPG",
             "slug": "role-playing-games-rpg"
         }
     ],
-    "id": 326243,
-    "metacritic": 95,
-    "metacritic_platforms": [
-        {
-            "metascore": 94,
-            "platform": {
-                "name": "PC",
-                "platform": 4,
-                "slug": "pc"
-            },
-            "url": "https://www.metacritic.com/game/pc/elden-ring"
-        },
-        {
-            "metascore": 96,
-            "platform": {
-                "name": "PlayStation 5",
-                "platform": 187,
-                "slug": "playstation5"
-            },
-            "url": "https://www.metacritic.com/game/playstation-5/elden-ring"
-        }
-    ],
-    "metacritic_url": "https://www.metacritic.com/game/playstation-5/elden-ring",
+    "id": 58758,
+    "metacritic": null,
+    "metacritic_platforms": [],
+    "metacritic_url": "https://www.metacritic.com/game/playstation-5/dying-light-2-stay-human",
     "movies_count": 0,
-    "name": "Elden Ring",
-    "name_original": "Elden Ring",
-    "parent_achievements_count": 6,
+    "name": "Dying Light 2 Stay Human",
+    "name_original": "Dying Light 2 Stay Human",
+    "parent_achievements_count": 50,
     "parent_platforms": [
         {
             "platform": {
@@ -97,425 +83,456 @@
                 "name": "Xbox",
                 "slug": "xbox"
             }
+        },
+        {
+            "platform": {
+                "id": 7,
+                "name": "Nintendo",
+                "slug": "nintendo"
+            }
         }
     ],
     "parents_count": 0,
     "platforms": [
         {
             "platform": {
-                "games_count": 6472,
-                "id": 18,
-                "image": null,
-                "image_background": "https://media.rawg.io/media/games/fc1/fc1307a2774506b5bd65d7e8424664a7.jpg",
-                "name": "PlayStation 4",
-                "slug": "playstation4",
-                "year_end": null,
-                "year_start": null
-            },
-            "released_at": "2022-02-25",
-            "requirements": {}
-        },
-        {
-            "platform": {
-                "games_count": 5389,
-                "id": 1,
-                "image": null,
-                "image_background": "https://media.rawg.io/media/games/bc0/bc06a29ceac58652b684deefe7d56099.jpg",
-                "name": "Xbox One",
-                "slug": "xbox-one",
-                "year_end": null,
-                "year_start": null
-            },
-            "released_at": "2022-02-25",
-            "requirements": {}
-        },
-        {
-            "platform": {
-                "games_count": 610,
-                "id": 186,
-                "image": null,
-                "image_background": "https://media.rawg.io/media/games/718/71891d2484a592d871e91dc826707e1c.jpg",
-                "name": "Xbox Series S/X",
-                "slug": "xbox-series-x",
-                "year_end": null,
-                "year_start": 2020
-            },
-            "released_at": "2022-02-25",
-            "requirements": {}
-        },
-        {
-            "platform": {
-                "games_count": 678,
-                "id": 187,
-                "image": null,
-                "image_background": "https://media.rawg.io/media/games/de6/de66bc4c72b45c3bb906c85d0628112d.jpg",
-                "name": "PlayStation 5",
-                "slug": "playstation5",
-                "year_end": null,
-                "year_start": 2020
-            },
-            "released_at": "2022-02-25",
-            "requirements": {}
-        },
-        {
-            "platform": {
-                "games_count": 481458,
+                "games_count": 490882,
                 "id": 4,
                 "image": null,
-                "image_background": "https://media.rawg.io/media/games/b45/b45575f34285f2c4479c9a5f719d972e.jpg",
+                "image_background": "https://media.rawg.io/media/games/fc1/fc1307a2774506b5bd65d7e8424664a7.jpg",
                 "name": "PC",
                 "slug": "pc",
                 "year_end": null,
                 "year_start": null
             },
-            "released_at": "2022-02-25",
+            "released_at": "2022-02-04",
             "requirements": {
-                "minimum": "Minimum:\nOS: Windows 10\nProcessor: INTEL CORE I5-8400 or AMD RYZEN 3 3300X\nMemory: 12 GB RAM\nGraphics: NVIDIA GEFORCE GTX 1060 3 GB or AMD RADEON RX 580 4 GB\nDirectX: Version 12\nStorage: 60 GB available space\nSound Card: Windows Compatible Audio Device\nAdditional Notes: ",
-                "recommended": "Recommended:\nOS: Windows 10/11\nProcessor: INTEL CORE I7-8700K or AMD RYZEN 5 3600X\nMemory: 16 GB RAM\nGraphics: NVIDIA GEFORCE GTX 1070 8 GB or AMD RADEON RX VEGA 56 8 GB\nDirectX: Version 12\nStorage: 60 GB available space\nSound Card: Windows Compatible Audio Device\nAdditional Notes: "
+                "minimum": "Minimum:\nRequires a 64-bit processor and operating system\nOS: TBC\nProcessor: TBC\nGraphics: TBC\nSound Card: TBC",
+                "recommended": "Recommended:\nRequires a 64-bit processor and operating system\nOS: TBC\nProcessor: TBC\nGraphics: TBC\nSound Card: TBC"
             }
+        },
+        {
+            "platform": {
+                "games_count": 5422,
+                "id": 1,
+                "image": null,
+                "image_background": "https://media.rawg.io/media/games/8cc/8cce7c0e99dcc43d66c8efd42f9d03e3.jpg",
+                "name": "Xbox One",
+                "slug": "xbox-one",
+                "year_end": null,
+                "year_start": null
+            },
+            "released_at": "2022-02-04",
+            "requirements": {}
+        },
+        {
+            "platform": {
+                "games_count": 646,
+                "id": 186,
+                "image": null,
+                "image_background": "https://media.rawg.io/media/games/708/7080e6c87e0825cb02888bf3c44b3889.jpg",
+                "name": "Xbox Series S/X",
+                "slug": "xbox-series-x",
+                "year_end": null,
+                "year_start": 2020
+            },
+            "released_at": "2022-02-04",
+            "requirements": {}
+        },
+        {
+            "platform": {
+                "games_count": 6504,
+                "id": 18,
+                "image": null,
+                "image_background": "https://media.rawg.io/media/games/d1a/d1a2e99ade53494c6330a0ed945fe823.jpg",
+                "name": "PlayStation 4",
+                "slug": "playstation4",
+                "year_end": null,
+                "year_start": null
+            },
+            "released_at": "2022-02-04",
+            "requirements": {}
+        },
+        {
+            "platform": {
+                "games_count": 5037,
+                "id": 7,
+                "image": null,
+                "image_background": "https://media.rawg.io/media/games/9fa/9fa63622543e5d4f6d99aa9d73b043de.jpg",
+                "name": "Nintendo Switch",
+                "slug": "nintendo-switch",
+                "year_end": null,
+                "year_start": null
+            },
+            "released_at": "2022-02-04",
+            "requirements": {}
+        },
+        {
+            "platform": {
+                "games_count": 718,
+                "id": 187,
+                "image": null,
+                "image_background": "https://media.rawg.io/media/games/456/456dea5e1c7e3cd07060c14e96612001.jpg",
+                "name": "PlayStation 5",
+                "slug": "playstation5",
+                "year_end": null,
+                "year_start": 2020
+            },
+            "released_at": "2022-02-04",
+            "requirements": {}
         }
     ],
-    "playtime": 63,
+    "playtime": 23,
     "publishers": [
         {
-            "games_count": 562,
-            "id": 8352,
-            "image_background": "https://media.rawg.io/media/games/16a/16a81cc458b0acb6ed2bcfd2a10f1527.jpg",
-            "name": "Bandai Namco Entertainment",
-            "slug": "bandai-namco-entertainment"
-        },
-        {
-            "games_count": 22,
-            "id": 11230,
-            "image_background": "https://media.rawg.io/media/games/1c8/1c8c873ecaf82bb408db648cedeca542.jpg",
-            "name": "FromSoftware",
-            "slug": "fromsoftware"
+            "games_count": 12,
+            "id": 1838,
+            "image_background": "https://media.rawg.io/media/games/f1a/f1ab53ba75dd2077d861d4e56efb0b29.jpg",
+            "name": "Techland Publishing",
+            "slug": "techland-publishing"
         }
     ],
-    "rating": 4.43,
-    "rating_top": 5,
+    "rating": 3.76,
+    "rating_top": 4,
     "ratings": [
         {
-            "count": 370,
-            "id": 5,
-            "percent": 68.65,
-            "title": "exceptional"
-        },
-        {
-            "count": 99,
+            "count": 72,
             "id": 4,
-            "percent": 18.37,
+            "percent": 47.37,
             "title": "recommended"
         },
         {
             "count": 37,
+            "id": 5,
+            "percent": 24.34,
+            "title": "exceptional"
+        },
+        {
+            "count": 28,
             "id": 3,
-            "percent": 6.86,
+            "percent": 18.42,
             "title": "meh"
         },
         {
-            "count": 33,
+            "count": 15,
             "id": 1,
-            "percent": 6.12,
+            "percent": 9.87,
             "title": "skip"
         }
     ],
-    "ratings_count": 516,
+    "ratings_count": 148,
     "reactions": {
-        "1": 5,
-        "11": 1,
-        "12": 3,
-        "13": 1,
-        "14": 2,
-        "15": 1,
-        "2": 3,
-        "20": 1,
-        "21": 2,
-        "3": 10,
+        "10": 1,
+        "2": 1,
+        "3": 1,
         "5": 1,
-        "6": 6,
+        "6": 1,
         "9": 1
     },
-    "reddit_count": 7117,
-    "reddit_description": "This is the subreddit for the Elden Ring gaming community. Elden Ring is an action RPG which takes place in the Lands Between, sometime after the Shattering of the titular Elden Ring. Players must explore and fight their way through the vast open-world to unite all the shards, restore the Elden Ring, and become Elden Lord. Elden Ring was directed by Hidetaka Miyazaki and made in collaboration with George R. R. Martin. It was developed by FromSoft and published by Bandai Namco.",
-    "reddit_logo": "https://b.thumbs.redditmedia.com/x2S4WcLDm8uKE5JDcYN5rLizqXfIXXKXMbYMBNDWYFk.png",
-    "reddit_name": "Elden Ring",
-    "reddit_url": "https://www.reddit.com/r/Eldenring/",
-    "released": "2022-02-25",
-    "reviews_count": 539,
-    "reviews_text_count": 23,
+    "reddit_count": 1089,
+    "reddit_description": "Dying Light and Dying Light 2 are first person zombie survival games developed by Techland.",
+    "reddit_logo": "",
+    "reddit_name": "Dying Light",
+    "reddit_url": "https://www.reddit.com/r/dyinglight/",
+    "released": "2022-02-04",
+    "reviews_count": 152,
+    "reviews_text_count": 4,
     "saturated_color": "0f0f0f",
-    "screenshots_count": 22,
-    "slug": "elden-ring",
+    "screenshots_count": 18,
+    "slug": "dying-light-2",
     "stores": [
         {
-            "id": 639740,
+            "id": 729291,
+            "store": {
+                "domain": "epicgames.com",
+                "games_count": 1126,
+                "id": 11,
+                "image_background": "https://media.rawg.io/media/games/456/456dea5e1c7e3cd07060c14e96612001.jpg",
+                "name": "Epic Games",
+                "slug": "epic-games"
+            },
+            "url": ""
+        },
+        {
+            "id": 328098,
             "store": {
                 "domain": "store.steampowered.com",
-                "games_count": 66933,
+                "games_count": 68103,
                 "id": 1,
-                "image_background": "https://media.rawg.io/media/games/8cc/8cce7c0e99dcc43d66c8efd42f9d03e3.jpg",
+                "image_background": "https://media.rawg.io/media/games/562/562553814dd54e001a541e4ee83a591c.jpg",
                 "name": "Steam",
                 "slug": "steam"
             },
             "url": ""
         },
         {
-            "id": 641387,
-            "store": {
-                "domain": "store.playstation.com",
-                "games_count": 7796,
-                "id": 3,
-                "image_background": "https://media.rawg.io/media/games/588/588c6bdff3d4baf66ec36b1c05b793bf.jpg",
-                "name": "PlayStation Store",
-                "slug": "playstation-store"
-            },
-            "url": ""
-        },
-        {
-            "id": 641388,
+            "id": 603147,
             "store": {
                 "domain": "microsoft.com",
-                "games_count": 4748,
+                "games_count": 4754,
                 "id": 2,
-                "image_background": "https://media.rawg.io/media/games/fc1/fc1307a2774506b5bd65d7e8424664a7.jpg",
+                "image_background": "https://media.rawg.io/media/games/f87/f87457e8347484033cb34cde6101d08d.jpg",
                 "name": "Xbox Store",
                 "slug": "xbox-store"
             },
             "url": ""
+        },
+        {
+            "id": 665010,
+            "store": {
+                "domain": "nintendo.com",
+                "games_count": 8850,
+                "id": 6,
+                "image_background": "https://media.rawg.io/media/games/be0/be01c3d7d8795a45615da139322ca080.jpg",
+                "name": "Nintendo Store",
+                "slug": "nintendo"
+            },
+            "url": ""
+        },
+        {
+            "id": 698679,
+            "store": {
+                "domain": "store.playstation.com",
+                "games_count": 7781,
+                "id": 3,
+                "image_background": "https://media.rawg.io/media/games/618/618c2031a07bbff6b4f611f10b6bcdbc.jpg",
+                "name": "PlayStation Store",
+                "slug": "playstation-store"
+            },
+            "url": ""
         }
     ],
-    "suggestions_count": 559,
+    "suggestions_count": 1142,
     "tags": [
         {
-            "games_count": 182311,
+            "games_count": 186940,
             "id": 31,
-            "image_background": "https://media.rawg.io/media/games/328/3283617cb7d75d67257fc58339188742.jpg",
+            "image_background": "https://media.rawg.io/media/games/b7d/b7d3f1715fa8381a4e780173a197a615.jpg",
             "language": "eng",
             "name": "Singleplayer",
             "slug": "singleplayer"
         },
         {
-            "games_count": 27175,
-            "id": 40847,
-            "image_background": "https://media.rawg.io/media/games/d58/d588947d4286e7b5e0e12e1bea7d9844.jpg",
-            "language": "eng",
-            "name": "Steam Achievements",
-            "slug": "steam-achievements"
-        },
-        {
-            "games_count": 32822,
+            "games_count": 33331,
             "id": 7,
-            "image_background": "https://media.rawg.io/media/games/960/960b601d9541cec776c5fa42a00bf6c4.jpg",
+            "image_background": "https://media.rawg.io/media/games/73e/73eecb8909e0c39fb246f457b5d6cbbe.jpg",
             "language": "eng",
             "name": "Multiplayer",
             "slug": "multiplayer"
         },
         {
-            "games_count": 24690,
+            "games_count": 25467,
             "id": 13,
-            "image_background": "https://media.rawg.io/media/games/b45/b45575f34285f2c4479c9a5f719d972e.jpg",
+            "image_background": "https://media.rawg.io/media/games/d1a/d1a2e99ade53494c6330a0ed945fe823.jpg",
             "language": "eng",
             "name": "Atmospheric",
             "slug": "atmospheric"
         },
         {
-            "games_count": 12701,
+            "games_count": 12961,
             "id": 40836,
-            "image_background": "https://media.rawg.io/media/games/4be/4be6a6ad0364751a96229c56bf69be59.jpg",
+            "image_background": "https://media.rawg.io/media/games/d58/d588947d4286e7b5e0e12e1bea7d9844.jpg",
             "language": "eng",
             "name": "Full controller support",
             "slug": "full-controller-support"
         },
         {
-            "games_count": 3212,
-            "id": 42,
-            "image_background": "https://media.rawg.io/media/games/490/49016e06ae2103881ff6373248843069.jpg",
-            "language": "eng",
-            "name": "Great Soundtrack",
-            "slug": "great-soundtrack"
-        },
-        {
-            "games_count": 15296,
+            "games_count": 15578,
             "id": 24,
-            "image_background": "https://media.rawg.io/media/games/da1/da1b267764d77221f07a4386b6548e5a.jpg",
+            "image_background": "https://media.rawg.io/media/games/c24/c24ec439abf4a2e92f3429dfa83f7f94.jpg",
             "language": "eng",
             "name": "RPG",
             "slug": "rpg"
         },
         {
-            "games_count": 8869,
+            "games_count": 9045,
             "id": 18,
-            "image_background": "https://media.rawg.io/media/games/c6b/c6bfece1daf8d06bc0a60632ac78e5bf.jpg",
+            "image_background": "https://media.rawg.io/media/games/f87/f87457e8347484033cb34cde6101d08d.jpg",
             "language": "eng",
             "name": "Co-op",
             "slug": "co-op"
         },
         {
-            "games_count": 5498,
+            "games_count": 5634,
             "id": 36,
-            "image_background": "https://media.rawg.io/media/games/16b/16b1b7b36e2042d1128d5a3e852b3b2f.jpg",
+            "image_background": "https://media.rawg.io/media/games/34b/34b1f1850a1c06fd971bc6ab3ac0ce0e.jpg",
             "language": "eng",
             "name": "Open World",
             "slug": "open-world"
         },
         {
-            "games_count": 3583,
+            "games_count": 3663,
             "id": 411,
-            "image_background": "https://media.rawg.io/media/games/21c/21cc15d233117c6809ec86870559e105.jpg",
+            "image_background": "https://media.rawg.io/media/games/476/476178ef18ab0534771d099f51cdc694.jpg",
             "language": "eng",
             "name": "cooperative",
             "slug": "cooperative"
         },
         {
-            "games_count": 7880,
-            "id": 149,
-            "image_background": "https://media.rawg.io/media/games/ee3/ee3e10193aafc3230ba1cae426967d10.jpg",
+            "games_count": 25089,
+            "id": 8,
+            "image_background": "https://media.rawg.io/media/games/7cf/7cfc9220b401b7a300e409e539c9afd5.jpg",
             "language": "eng",
-            "name": "Third Person",
-            "slug": "third-person"
+            "name": "First-Person",
+            "slug": "first-person"
         },
         {
-            "games_count": 3768,
-            "id": 9,
-            "image_background": "https://media.rawg.io/media/games/4e0/4e0e7b6d6906a131307c94266e5c9a1c.jpg",
+            "games_count": 38038,
+            "id": 16,
+            "image_background": "https://media.rawg.io/media/games/b49/b4912b5dbfc7ed8927b65f05b8507f6c.jpg",
             "language": "eng",
-            "name": "Online Co-Op",
-            "slug": "online-co-op"
+            "name": "Horror",
+            "slug": "horror"
         },
         {
-            "games_count": 21420,
-            "id": 64,
-            "image_background": "https://media.rawg.io/media/games/618/618c2031a07bbff6b4f611f10b6bcdbc.jpg",
+            "games_count": 4716,
+            "id": 26,
+            "image_background": "https://media.rawg.io/media/games/7f6/7f6cd70ba2ad57053b4847c13569f2d8.jpg",
             "language": "eng",
-            "name": "Fantasy",
-            "slug": "fantasy"
+            "name": "Gore",
+            "slug": "gore"
         },
         {
-            "games_count": 11695,
-            "id": 49,
-            "image_background": "https://media.rawg.io/media/games/283/283e7e600366b0da7021883d27159b27.jpg",
-            "language": "eng",
-            "name": "Difficult",
-            "slug": "difficult"
-        },
-        {
-            "games_count": 5461,
+            "games_count": 5542,
             "id": 34,
-            "image_background": "https://media.rawg.io/media/games/13a/13a528ac9cf48bbb6be5d35fe029336d.jpg",
+            "image_background": "https://media.rawg.io/media/games/5a4/5a44112251d70a25291cc33757220fce.jpg",
             "language": "eng",
             "name": "Violent",
             "slug": "violent"
         },
         {
-            "games_count": 5120,
-            "id": 97,
-            "image_background": "https://media.rawg.io/media/games/364/3642d850efb217c58feab80b8affaa89.jpg",
+            "games_count": 5330,
+            "id": 15,
+            "image_background": "https://media.rawg.io/media/games/e6d/e6de699bd788497f4b52e2f41f9698f2.jpg",
             "language": "eng",
-            "name": "Action RPG",
-            "slug": "action-rpg"
+            "name": "Stealth",
+            "slug": "stealth"
         },
         {
-            "games_count": 6102,
-            "id": 157,
-            "image_background": "https://media.rawg.io/media/games/1bd/1bd2657b81eb0c99338120ad444b24ff.jpg",
+            "games_count": 12283,
+            "id": 69,
+            "image_background": "https://media.rawg.io/media/games/7f6/7f6cd70ba2ad57053b4847c13569f2d8.jpg",
             "language": "eng",
-            "name": "PvP",
-            "slug": "pvp"
+            "name": "Action-Adventure",
+            "slug": "action-adventure"
         },
         {
-            "games_count": 2708,
-            "id": 40,
-            "image_background": "https://media.rawg.io/media/games/d09/d096ad37b7f522e11c02848252213a9a.jpg",
+            "games_count": 12415,
+            "id": 41,
+            "image_background": "https://media.rawg.io/media/games/b49/b4912b5dbfc7ed8927b65f05b8507f6c.jpg",
             "language": "eng",
-            "name": "Dark Fantasy",
-            "slug": "dark-fantasy"
+            "name": "Dark",
+            "slug": "dark"
         },
         {
-            "games_count": 5678,
-            "id": 91,
-            "image_background": "https://media.rawg.io/media/games/63f/63f0e68688cad279ed38cde931dbfcdb.jpg",
+            "games_count": 9245,
+            "id": 63,
+            "image_background": "https://media.rawg.io/media/games/c11/c11a0b92b4c28f2e0db489f430142653.jpg",
             "language": "eng",
-            "name": "Walking Simulator",
-            "slug": "walking-simulator"
+            "name": "Zombies",
+            "slug": "zombies"
         },
         {
-            "games_count": 69065,
-            "id": 571,
-            "image_background": "https://media.rawg.io/media/games/4be/4be6a6ad0364751a96229c56bf69be59.jpg",
+            "games_count": 2962,
+            "id": 188,
+            "image_background": "https://media.rawg.io/media/games/f6b/f6bed028b02369d4cab548f4f9337e81.jpg",
             "language": "eng",
-            "name": "3D",
-            "slug": "3d"
+            "name": "Parkour",
+            "slug": "parkour"
         },
         {
-            "games_count": 318,
-            "id": 40937,
-            "image_background": "https://media.rawg.io/media/games/786/7863e587bac630de82fca50d799236a9.jpg",
+            "games_count": 7967,
+            "id": 1465,
+            "image_background": "https://media.rawg.io/media/games/568/5689c58278e807c1574ceefb8dec026b.jpg",
             "language": "eng",
-            "name": "Steam Trading Cards",
-            "slug": "steam-trading-cards-2"
+            "name": "combat",
+            "slug": "combat"
         },
         {
-            "games_count": 11640,
-            "id": 138,
-            "image_background": "https://media.rawg.io/media/screenshots/3b1/3b1855db98916d9d473922795f52a25a.jpeg",
+            "games_count": 6438,
+            "id": 413,
+            "image_background": "https://media.rawg.io/media/games/be5/be51faf9bec778b4ea1b06e9b084792c.jpg",
             "language": "eng",
-            "name": "Relaxing",
-            "slug": "relaxing"
+            "name": "online",
+            "slug": "online"
         },
         {
-            "games_count": 2501,
-            "id": 45878,
-            "image_background": "https://media.rawg.io/media/games/c3b/c3be1d5f55cb9324c97ccb7aaaf42ad4.jpg",
+            "games_count": 8908,
+            "id": 2030,
+            "image_background": "https://media.rawg.io/media/games/4d3/4d36d90fd20f0c0e7e66a99fd624b03a.jpg",
             "language": "eng",
-            "name": "Online PvP",
-            "slug": "online-pvp"
+            "name": "city",
+            "slug": "city"
         },
         {
-            "games_count": 3964,
-            "id": 581,
-            "image_background": "https://media.rawg.io/media/screenshots/4d9/4d9afae02fdf2896569b1c7bfeabb8c1.jpg",
+            "games_count": 14829,
+            "id": 744,
+            "image_background": "https://media.rawg.io/media/games/278/27873379c6d27b968babbeefa9b44da3.jpg",
             "language": "eng",
-            "name": "Epic",
-            "slug": "epic"
+            "name": "friends",
+            "slug": "friends"
         },
         {
-            "games_count": 767,
-            "id": 580,
-            "image_background": "https://media.rawg.io/media/games/b01/b01aa6b2d6d4f683203e9471a8b8d5b5.jpg",
+            "games_count": 1826,
+            "id": 3109,
+            "image_background": "https://media.rawg.io/media/games/4fe/4feffcec6315c5f5a96442a8444431ca.jpg",
             "language": "eng",
-            "name": "Souls-like",
-            "slug": "souls-like"
+            "name": "weapons",
+            "slug": "weapons"
         },
         {
-            "games_count": 2226,
-            "id": 1221,
-            "image_background": "https://media.rawg.io/media/screenshots/83d/83d046e6efe7a6d4a31a88177e2605b5.jpg",
+            "games_count": 9018,
+            "id": 624,
+            "image_background": "https://media.rawg.io/media/screenshots/732/73215f681f68d6463b78e8ffd6c99927.jpg",
             "language": "eng",
-            "name": "history",
-            "slug": "history"
+            "name": "Monsters",
+            "slug": "monsters"
         },
         {
-            "games_count": 5820,
-            "id": 1897,
-            "image_background": "https://media.rawg.io/media/screenshots/044/0443b65fa47f4148a3d518d57a22ca3a.jpg",
+            "games_count": 3158,
+            "id": 820,
+            "image_background": "https://media.rawg.io/media/screenshots/fae/faef87e072c9156cab9acaf8a3bef244.jpg",
             "language": "eng",
-            "name": "fire",
-            "slug": "fire"
+            "name": "secrets",
+            "slug": "secrets"
         },
         {
-            "games_count": 2078,
-            "id": 1986,
-            "image_background": "https://media.rawg.io/media/screenshots/c2c/c2cf05037231f0286f0b443e2a62b7da.jpg",
+            "games_count": 4314,
+            "id": 1652,
+            "image_background": "https://media.rawg.io/media/screenshots/a71/a716436bd36cbea4979b0ad7ecae578d.jpg",
             "language": "eng",
-            "name": "ice",
-            "slug": "ice"
+            "name": "night",
+            "slug": "night"
+        },
+        {
+            "games_count": 1621,
+            "id": 2889,
+            "image_background": "https://media.rawg.io/media/games/9ef/9eff74427541e502c1587a33f08dfca5.jpg",
+            "language": "eng",
+            "name": "balance",
+            "slug": "balance"
+        },
+        {
+            "games_count": 2150,
+            "id": 704,
+            "image_background": "https://media.rawg.io/media/screenshots/35b/35b8fcbc1ec2eae77b4aa75b48aae2c0.jpg",
+            "language": "eng",
+            "name": "Traps",
+            "slug": "traps"
+        },
+        {
+            "games_count": 1207,
+            "id": 769,
+            "image_background": "https://media.rawg.io/media/games/73d/73db43df633477d4604c7248292f34b2.jpg",
+            "language": "eng",
+            "name": "virus",
+            "slug": "virus"
         }
     ],
     "tba": false,
-    "twitch_count": 183,
-    "updated": "2022-09-19T00:40:16",
+    "twitch_count": 26,
+    "updated": "2022-10-16T23:57:41",
     "user_game": null,
-    "website": "https://en.bandainamcoent.eu/elden-ring/elden-ring",
+    "website": "https://dyinglightgame.com/",
     "youtube_count": 1000000
 }

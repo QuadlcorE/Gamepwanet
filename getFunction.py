@@ -4,7 +4,7 @@ import json
 from test2 import jprint, write_txt, current_month, current_year
 
 def get_top_games(number):
-    '''Returns a list of dictionaries of the top 5 popular games
+    '''Returns a list of dictionaries of the top 'number' popular games
     dictionary contains id, slug, name, released, metacritic, playtime.
     '''
 
@@ -41,7 +41,7 @@ def get_top_games_this_month(number):
     year = current_year()
     month = current_month()
     param = {
-        "pagesize" : number,
+        "page_size" : number,
         "dates" : f"{year}-{month}-01,{year}-{month}-30",
         "ordering" : "-added"
     }
@@ -105,12 +105,11 @@ def get_game_info(game_id):
     #jprint(data)
     return data
 
-
+"""
 listing = get_top_games_this_month(2) 
 for game in listing["results"]:
-    jprint(game)
-    
-
+    jprint(game) 
+"""
 #get_top_games()
 #get_game_screenshots("lost-ark")
 #get_game_background("a-plague-tale-requiem")
