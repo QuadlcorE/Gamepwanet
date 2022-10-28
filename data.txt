@@ -1,67 +1,72 @@
 {
-    "achievements_count": 149,
-    "added": 2035,
+    "achievements_count": 156,
+    "added": 2090,
     "added_by_status": {
-        "beaten": 97,
-        "dropped": 37,
-        "owned": 984,
-        "playing": 43,
-        "toplay": 666,
-        "yet": 208
+        "beaten": 21,
+        "dropped": 143,
+        "owned": 1811,
+        "playing": 40,
+        "toplay": 42,
+        "yet": 33
     },
     "additions_count": 0,
-    "alternative_names": [
-        "Dying Light 2 Stay Human"
-    ],
-    "background_image": "https://media.rawg.io/media/games/73d/73db43df633477d4604c7248292f34b2.jpg",
-    "background_image_additional": "https://media.rawg.io/media/screenshots/97b/97b0e4b2e62218645eab82db11c6cd07.jpg",
+    "alternative_names": [],
+    "background_image": "https://media.rawg.io/media/games/d9e/d9e868382c48ec98c9b23b8fbe6a2045.jpg",
+    "background_image_additional": "https://media.rawg.io/media/screenshots/85f/85f7aa38755629d329b61e3286202cac.jpg",
     "clip": null,
-    "creators_count": 11,
-    "description": "<p>Dying Light 2 brings to life a unique post-apocalyptic vision of the Modern Dark Ages - a brutal, bleak and unforgiving reality where you are as likely to perish at the hand of a human as you are by the infected. </p>\n<p>In this exhausted world, your quick thinking, exceptional parkour abilities and brutal combat skills are the only things that let you dive into darkness and emerge alive. Make morally grey decisions and witness how they impact the world at multiple levels, shape the transformation of the City, and ultimately decide its fate.</p>",
-    "description_raw": "Dying Light 2 brings to life a unique post-apocalyptic vision of the Modern Dark Ages - a brutal, bleak and unforgiving reality where you are as likely to perish at the hand of a human as you are by the infected. \r\n\r\nIn this exhausted world, your quick thinking, exceptional parkour abilities and brutal combat skills are the only things that let you dive into darkness and emerge alive. Make morally grey decisions and witness how they impact the world at multiple levels, shape the transformation of the City, and ultimately decide its fate.",
+    "creators_count": 0,
+    "description": "<p>Explore seven vast, varied continents and the seas between them to find vibrant cultures, strange and fantastical beasts, and all the unexpected marvels waiting to be discovered. Delve into the secrets of Arkesia, prove your might in battles and raids, compete against other players in PvP, travel to distant islands in search of hidden riches, face packs of enemies and colossal bosses in the open world, and more.</p>",
+    "description_raw": "Explore seven vast, varied continents and the seas between them to find vibrant cultures, strange and fantastical beasts, and all the unexpected marvels waiting to be discovered. Delve into the secrets of Arkesia, prove your might in battles and raids, compete against other players in PvP, travel to distant islands in search of hidden riches, face packs of enemies and colossal bosses in the open world, and more.",
     "developers": [
         {
-            "games_count": 50,
-            "id": 4303,
-            "image_background": "https://media.rawg.io/media/games/a41/a4126f8dc70a3e664b18b983722ed082.jpg",
-            "name": "Techland",
-            "slug": "techland"
+            "games_count": 5,
+            "id": 28980,
+            "image_background": "https://media.rawg.io/media/games/693/6939bd98977019e84dc361242c30d684.jpg",
+            "name": "Smilegate Entertainment",
+            "slug": "smilegate-entertainment"
         }
     ],
     "dominant_color": "0f0f0f",
-    "esrb_rating": null,
-    "game_series_count": 1,
+    "esrb_rating": {
+        "id": 4,
+        "name": "Mature",
+        "slug": "mature"
+    },
+    "game_series_count": 0,
     "genres": [
         {
-            "games_count": 164441,
-            "id": 4,
-            "image_background": "https://media.rawg.io/media/games/d82/d82990b9c67ba0d2d09d4e6fa88885a7.jpg",
-            "name": "Action",
-            "slug": "action"
-        },
-        {
-            "games_count": 125105,
-            "id": 3,
-            "image_background": "https://media.rawg.io/media/games/4e6/4e6e8e7f50c237d76f38f3c885dae3d2.jpg",
-            "name": "Adventure",
-            "slug": "adventure"
-        },
-        {
-            "games_count": 50059,
+            "games_count": 50250,
             "id": 5,
-            "image_background": "https://media.rawg.io/media/games/618/618c2031a07bbff6b4f611f10b6bcdbc.jpg",
+            "image_background": "https://media.rawg.io/media/games/214/214b29aeff13a0ae6a70fc4426e85991.jpg",
             "name": "RPG",
             "slug": "role-playing-games-rpg"
+        },
+        {
+            "games_count": 3047,
+            "id": 59,
+            "image_background": "https://media.rawg.io/media/games/b72/b7233d5d5b1e75e86bb860ccc7aeca85.jpg",
+            "name": "Massively Multiplayer",
+            "slug": "massively-multiplayer"
         }
     ],
-    "id": 58758,
-    "metacritic": null,
-    "metacritic_platforms": [],
-    "metacritic_url": "https://www.metacritic.com/game/playstation-5/dying-light-2-stay-human",
+    "id": 372576,
+    "metacritic": 81,
+    "metacritic_platforms": [
+        {
+            "metascore": 81,
+            "platform": {
+                "name": "PC",
+                "platform": 4,
+                "slug": "pc"
+            },
+            "url": "https://www.metacritic.com/game/pc/lost-ark"
+        }
+    ],
+    "metacritic_url": "https://www.metacritic.com/game/pc/lost-ark",
     "movies_count": 0,
-    "name": "Dying Light 2 Stay Human",
-    "name_original": "Dying Light 2 Stay Human",
-    "parent_achievements_count": 50,
+    "name": "Lost Ark",
+    "name_original": "Lost Ark",
+    "parent_achievements_count": 156,
     "parent_platforms": [
         {
             "platform": {
@@ -69,470 +74,326 @@
                 "name": "PC",
                 "slug": "pc"
             }
-        },
-        {
-            "platform": {
-                "id": 2,
-                "name": "PlayStation",
-                "slug": "playstation"
-            }
-        },
-        {
-            "platform": {
-                "id": 3,
-                "name": "Xbox",
-                "slug": "xbox"
-            }
-        },
-        {
-            "platform": {
-                "id": 7,
-                "name": "Nintendo",
-                "slug": "nintendo"
-            }
         }
     ],
     "parents_count": 0,
     "platforms": [
         {
             "platform": {
-                "games_count": 490882,
+                "games_count": 492759,
                 "id": 4,
                 "image": null,
-                "image_background": "https://media.rawg.io/media/games/fc1/fc1307a2774506b5bd65d7e8424664a7.jpg",
+                "image_background": "https://media.rawg.io/media/games/73e/73eecb8909e0c39fb246f457b5d6cbbe.jpg",
                 "name": "PC",
                 "slug": "pc",
                 "year_end": null,
                 "year_start": null
             },
-            "released_at": "2022-02-04",
+            "released_at": "2022-02-11",
             "requirements": {
-                "minimum": "Minimum:\nRequires a 64-bit processor and operating system\nOS: TBC\nProcessor: TBC\nGraphics: TBC\nSound Card: TBC",
-                "recommended": "Recommended:\nRequires a 64-bit processor and operating system\nOS: TBC\nProcessor: TBC\nGraphics: TBC\nSound Card: TBC"
+                "minimum": "M\u00ednimos:\nRequer um processador e sistema operacional de 64 bits\nSO: Windows 10 (64-bit)\nProcessador: Intel\u00a0i3 ou AMD Ryzen\u00a03\nMem\u00f3ria: 8 GB de RAM\nPlaca de v\u00eddeo: NVIDIA GeForce GTX 460 / AMD HD6850\nDirectX: Vers\u00e3o 9.0c\nRede: Conex\u00e3o de internet banda larga\nArmazenamento: 50 GB de espa\u00e7o dispon\u00edvel\nOutras observa\u00e7\u00f5es: Necess\u00e1ria conex\u00e3o de internet para jogar, oferece compras no jogo",
+                "recommended": "Recomendados:\nRequer um processador e sistema operacional de 64 bits\nSO: Windows 10 (64-bit)\nProcessador: Intel\u00a0i5 ou AMD Ryzen\u00a05\nMem\u00f3ria: 16 GB de RAM\nPlaca de v\u00eddeo: NVIDIA GeForce GTX 1050\nDirectX: Vers\u00e3o 11\nRede: Conex\u00e3o de internet banda larga\nArmazenamento: 50 GB de espa\u00e7o dispon\u00edvel\nOutras observa\u00e7\u00f5es: Necess\u00e1ria conex\u00e3o de internet para jogar, oferece compras no jogo"
             }
-        },
-        {
-            "platform": {
-                "games_count": 5422,
-                "id": 1,
-                "image": null,
-                "image_background": "https://media.rawg.io/media/games/8cc/8cce7c0e99dcc43d66c8efd42f9d03e3.jpg",
-                "name": "Xbox One",
-                "slug": "xbox-one",
-                "year_end": null,
-                "year_start": null
-            },
-            "released_at": "2022-02-04",
-            "requirements": {}
-        },
-        {
-            "platform": {
-                "games_count": 646,
-                "id": 186,
-                "image": null,
-                "image_background": "https://media.rawg.io/media/games/708/7080e6c87e0825cb02888bf3c44b3889.jpg",
-                "name": "Xbox Series S/X",
-                "slug": "xbox-series-x",
-                "year_end": null,
-                "year_start": 2020
-            },
-            "released_at": "2022-02-04",
-            "requirements": {}
-        },
-        {
-            "platform": {
-                "games_count": 6504,
-                "id": 18,
-                "image": null,
-                "image_background": "https://media.rawg.io/media/games/d1a/d1a2e99ade53494c6330a0ed945fe823.jpg",
-                "name": "PlayStation 4",
-                "slug": "playstation4",
-                "year_end": null,
-                "year_start": null
-            },
-            "released_at": "2022-02-04",
-            "requirements": {}
-        },
-        {
-            "platform": {
-                "games_count": 5037,
-                "id": 7,
-                "image": null,
-                "image_background": "https://media.rawg.io/media/games/9fa/9fa63622543e5d4f6d99aa9d73b043de.jpg",
-                "name": "Nintendo Switch",
-                "slug": "nintendo-switch",
-                "year_end": null,
-                "year_start": null
-            },
-            "released_at": "2022-02-04",
-            "requirements": {}
-        },
-        {
-            "platform": {
-                "games_count": 718,
-                "id": 187,
-                "image": null,
-                "image_background": "https://media.rawg.io/media/games/456/456dea5e1c7e3cd07060c14e96612001.jpg",
-                "name": "PlayStation 5",
-                "slug": "playstation5",
-                "year_end": null,
-                "year_start": 2020
-            },
-            "released_at": "2022-02-04",
-            "requirements": {}
         }
     ],
-    "playtime": 23,
+    "playtime": 10,
     "publishers": [
         {
-            "games_count": 12,
-            "id": 1838,
-            "image_background": "https://media.rawg.io/media/games/f1a/f1ab53ba75dd2077d861d4e56efb0b29.jpg",
-            "name": "Techland Publishing",
-            "slug": "techland-publishing"
+            "games_count": 4,
+            "id": 41420,
+            "image_background": "https://media.rawg.io/media/games/4ad/4ad7dc0f8a01abea9855309e91e933fc.jpg",
+            "name": "Amazon Games",
+            "slug": "amazon-games"
+        },
+        {
+            "games_count": 2,
+            "id": 35148,
+            "image_background": "https://media.rawg.io/media/games/d9e/d9e868382c48ec98c9b23b8fbe6a2045.jpg",
+            "name": "Mail.Ru Group",
+            "slug": "mailru-group"
         }
     ],
-    "rating": 3.76,
+    "rating": 3.35,
     "rating_top": 4,
     "ratings": [
         {
-            "count": 72,
+            "count": 63,
             "id": 4,
-            "percent": 47.37,
+            "percent": 41.18,
             "title": "recommended"
         },
         {
-            "count": 37,
-            "id": 5,
-            "percent": 24.34,
-            "title": "exceptional"
-        },
-        {
-            "count": 28,
+            "count": 53,
             "id": 3,
-            "percent": 18.42,
+            "percent": 34.64,
             "title": "meh"
         },
         {
-            "count": 15,
+            "count": 21,
             "id": 1,
-            "percent": 9.87,
+            "percent": 13.73,
             "title": "skip"
-        }
-    ],
-    "ratings_count": 148,
-    "reactions": {
-        "10": 1,
-        "2": 1,
-        "3": 1,
-        "5": 1,
-        "6": 1,
-        "9": 1
-    },
-    "reddit_count": 1089,
-    "reddit_description": "Dying Light and Dying Light 2 are first person zombie survival games developed by Techland.",
-    "reddit_logo": "",
-    "reddit_name": "Dying Light",
-    "reddit_url": "https://www.reddit.com/r/dyinglight/",
-    "released": "2022-02-04",
-    "reviews_count": 152,
-    "reviews_text_count": 4,
-    "saturated_color": "0f0f0f",
-    "screenshots_count": 18,
-    "slug": "dying-light-2",
-    "stores": [
-        {
-            "id": 729291,
-            "store": {
-                "domain": "epicgames.com",
-                "games_count": 1126,
-                "id": 11,
-                "image_background": "https://media.rawg.io/media/games/456/456dea5e1c7e3cd07060c14e96612001.jpg",
-                "name": "Epic Games",
-                "slug": "epic-games"
-            },
-            "url": ""
         },
         {
-            "id": 328098,
+            "count": 16,
+            "id": 5,
+            "percent": 10.46,
+            "title": "exceptional"
+        }
+    ],
+    "ratings_count": 149,
+    "reactions": {
+        "3": 1,
+        "7": 1
+    },
+    "reddit_count": 658,
+    "reddit_description": "Lost Ark, also known as LAO, is an MMORPG developed by Smilegate RPG and published by Amazon Games. First released in KR in November 2018. Now available in NA, SA and EU.",
+    "reddit_logo": "",
+    "reddit_name": "Lost Ark",
+    "reddit_url": "https://www.reddit.com/r/lostarkgame/",
+    "released": "2022-02-11",
+    "reviews_count": 153,
+    "reviews_text_count": 4,
+    "saturated_color": "0f0f0f",
+    "screenshots_count": 7,
+    "slug": "lost-ark",
+    "stores": [
+        {
+            "id": 698683,
             "store": {
                 "domain": "store.steampowered.com",
-                "games_count": 68103,
+                "games_count": 68358,
                 "id": 1,
-                "image_background": "https://media.rawg.io/media/games/562/562553814dd54e001a541e4ee83a591c.jpg",
+                "image_background": "https://media.rawg.io/media/games/8cc/8cce7c0e99dcc43d66c8efd42f9d03e3.jpg",
                 "name": "Steam",
                 "slug": "steam"
             },
             "url": ""
-        },
-        {
-            "id": 603147,
-            "store": {
-                "domain": "microsoft.com",
-                "games_count": 4754,
-                "id": 2,
-                "image_background": "https://media.rawg.io/media/games/f87/f87457e8347484033cb34cde6101d08d.jpg",
-                "name": "Xbox Store",
-                "slug": "xbox-store"
-            },
-            "url": ""
-        },
-        {
-            "id": 665010,
-            "store": {
-                "domain": "nintendo.com",
-                "games_count": 8850,
-                "id": 6,
-                "image_background": "https://media.rawg.io/media/games/be0/be01c3d7d8795a45615da139322ca080.jpg",
-                "name": "Nintendo Store",
-                "slug": "nintendo"
-            },
-            "url": ""
-        },
-        {
-            "id": 698679,
-            "store": {
-                "domain": "store.playstation.com",
-                "games_count": 7781,
-                "id": 3,
-                "image_background": "https://media.rawg.io/media/games/618/618c2031a07bbff6b4f611f10b6bcdbc.jpg",
-                "name": "PlayStation Store",
-                "slug": "playstation-store"
-            },
-            "url": ""
         }
     ],
-    "suggestions_count": 1142,
+    "suggestions_count": 666,
     "tags": [
         {
-            "games_count": 186940,
+            "games_count": 187897,
             "id": 31,
-            "image_background": "https://media.rawg.io/media/games/b7d/b7d3f1715fa8381a4e780173a197a615.jpg",
+            "image_background": "https://media.rawg.io/media/games/021/021c4e21a1824d2526f925eff6324653.jpg",
             "language": "eng",
             "name": "Singleplayer",
             "slug": "singleplayer"
         },
         {
-            "games_count": 33331,
+            "games_count": 33478,
             "id": 7,
-            "image_background": "https://media.rawg.io/media/games/73e/73eecb8909e0c39fb246f457b5d6cbbe.jpg",
+            "image_background": "https://media.rawg.io/media/games/b7b/b7b8381707152afc7d91f5d95de70e39.jpg",
             "language": "eng",
             "name": "Multiplayer",
             "slug": "multiplayer"
         },
         {
-            "games_count": 25467,
-            "id": 13,
-            "image_background": "https://media.rawg.io/media/games/d1a/d1a2e99ade53494c6330a0ed945fe823.jpg",
-            "language": "eng",
-            "name": "Atmospheric",
-            "slug": "atmospheric"
-        },
-        {
-            "games_count": 12961,
-            "id": 40836,
-            "image_background": "https://media.rawg.io/media/games/d58/d588947d4286e7b5e0e12e1bea7d9844.jpg",
-            "language": "eng",
-            "name": "Full controller support",
-            "slug": "full-controller-support"
-        },
-        {
-            "games_count": 15578,
+            "games_count": 15650,
             "id": 24,
-            "image_background": "https://media.rawg.io/media/games/c24/c24ec439abf4a2e92f3429dfa83f7f94.jpg",
+            "image_background": "https://media.rawg.io/media/games/b45/b45575f34285f2c4479c9a5f719d972e.jpg",
             "language": "eng",
             "name": "RPG",
             "slug": "rpg"
         },
         {
-            "games_count": 9045,
-            "id": 18,
-            "image_background": "https://media.rawg.io/media/games/f87/f87457e8347484033cb34cde6101d08d.jpg",
+            "games_count": 3889,
+            "id": 9,
+            "image_background": "https://media.rawg.io/media/games/d69/d69810315bd7e226ea2d21f9156af629.jpg",
             "language": "eng",
-            "name": "Co-op",
-            "slug": "co-op"
+            "name": "Online Co-Op",
+            "slug": "online-co-op"
         },
         {
-            "games_count": 5634,
-            "id": 36,
-            "image_background": "https://media.rawg.io/media/games/34b/34b1f1850a1c06fd971bc6ab3ac0ce0e.jpg",
+            "games_count": 22099,
+            "id": 64,
+            "image_background": "https://media.rawg.io/media/games/af7/af7a831001c5c32c46e950cc883b8cb7.jpg",
             "language": "eng",
-            "name": "Open World",
-            "slug": "open-world"
+            "name": "Fantasy",
+            "slug": "fantasy"
         },
         {
-            "games_count": 3663,
-            "id": 411,
-            "image_background": "https://media.rawg.io/media/games/476/476178ef18ab0534771d099f51cdc694.jpg",
-            "language": "eng",
-            "name": "cooperative",
-            "slug": "cooperative"
-        },
-        {
-            "games_count": 25089,
-            "id": 8,
-            "image_background": "https://media.rawg.io/media/games/7cf/7cfc9220b401b7a300e409e539c9afd5.jpg",
-            "language": "eng",
-            "name": "First-Person",
-            "slug": "first-person"
-        },
-        {
-            "games_count": 38038,
-            "id": 16,
-            "image_background": "https://media.rawg.io/media/games/b49/b4912b5dbfc7ed8927b65f05b8507f6c.jpg",
-            "language": "eng",
-            "name": "Horror",
-            "slug": "horror"
-        },
-        {
-            "games_count": 4716,
+            "games_count": 4728,
             "id": 26,
-            "image_background": "https://media.rawg.io/media/games/7f6/7f6cd70ba2ad57053b4847c13569f2d8.jpg",
+            "image_background": "https://media.rawg.io/media/games/4fb/4fb548e4816c84d1d70f1a228fb167cc.jpg",
             "language": "eng",
             "name": "Gore",
             "slug": "gore"
         },
         {
-            "games_count": 5542,
+            "games_count": 5559,
             "id": 34,
-            "image_background": "https://media.rawg.io/media/games/5a4/5a44112251d70a25291cc33757220fce.jpg",
+            "image_background": "https://media.rawg.io/media/games/7f6/7f6cd70ba2ad57053b4847c13569f2d8.jpg",
             "language": "eng",
             "name": "Violent",
             "slug": "violent"
         },
         {
-            "games_count": 5330,
-            "id": 15,
-            "image_background": "https://media.rawg.io/media/games/e6d/e6de699bd788497f4b52e2f41f9698f2.jpg",
+            "games_count": 4891,
+            "id": 79,
+            "image_background": "https://media.rawg.io/media/games/f87/f87457e8347484033cb34cde6101d08d.jpg",
             "language": "eng",
-            "name": "Stealth",
-            "slug": "stealth"
+            "name": "Free to Play",
+            "slug": "free-to-play"
         },
         {
-            "games_count": 12283,
-            "id": 69,
-            "image_background": "https://media.rawg.io/media/games/7f6/7f6cd70ba2ad57053b4847c13569f2d8.jpg",
+            "games_count": 5276,
+            "id": 97,
+            "image_background": "https://media.rawg.io/media/games/8d4/8d46786ca86b1d95f3dc7e700e2dc4dd.jpg",
             "language": "eng",
-            "name": "Action-Adventure",
-            "slug": "action-adventure"
+            "name": "Action RPG",
+            "slug": "action-rpg"
         },
         {
-            "games_count": 12415,
-            "id": 41,
-            "image_background": "https://media.rawg.io/media/games/b49/b4912b5dbfc7ed8927b65f05b8507f6c.jpg",
+            "games_count": 6330,
+            "id": 157,
+            "image_background": "https://media.rawg.io/media/games/7f0/7f021d4a3577ac9d591a628a431fc2e5.jpg",
             "language": "eng",
-            "name": "Dark",
-            "slug": "dark"
+            "name": "PvP",
+            "slug": "pvp"
         },
         {
-            "games_count": 9245,
-            "id": 63,
-            "image_background": "https://media.rawg.io/media/games/c11/c11a0b92b4c28f2e0db489f430142653.jpg",
+            "games_count": 2987,
+            "id": 68,
+            "image_background": "https://media.rawg.io/media/games/559/559bc0768f656ad0c63c54b80a82d680.jpg",
             "language": "eng",
-            "name": "Zombies",
-            "slug": "zombies"
+            "name": "Hack and Slash",
+            "slug": "hack-and-slash"
         },
         {
-            "games_count": 2962,
-            "id": 188,
-            "image_background": "https://media.rawg.io/media/games/f6b/f6bed028b02369d4cab548f4f9337e81.jpg",
+            "games_count": 2969,
+            "id": 121,
+            "image_background": "https://media.rawg.io/media/games/c22/c22d804ac753c72f2617b3708a625dec.jpg",
             "language": "eng",
-            "name": "Parkour",
-            "slug": "parkour"
+            "name": "Character Customization",
+            "slug": "character-customization"
         },
         {
-            "games_count": 7967,
-            "id": 1465,
-            "image_background": "https://media.rawg.io/media/games/568/5689c58278e807c1574ceefb8dec026b.jpg",
+            "games_count": 3546,
+            "id": 99,
+            "image_background": "https://media.rawg.io/media/games/d87/d87268c4b7b33b278cbc1f152db39729.jpg",
             "language": "eng",
-            "name": "combat",
-            "slug": "combat"
+            "name": "Isometric",
+            "slug": "isometric"
         },
         {
-            "games_count": 6438,
-            "id": 413,
-            "image_background": "https://media.rawg.io/media/games/be5/be51faf9bec778b4ea1b06e9b084792c.jpg",
+            "games_count": 3771,
+            "id": 50,
+            "image_background": "https://media.rawg.io/media/games/260/26023c855f1769a93411d6a7ea084632.jpeg",
             "language": "eng",
-            "name": "online",
-            "slug": "online"
+            "name": "Sexual Content",
+            "slug": "sexual-content"
         },
         {
-            "games_count": 8908,
-            "id": 2030,
-            "image_background": "https://media.rawg.io/media/games/4d3/4d36d90fd20f0c0e7e66a99fd624b03a.jpg",
+            "games_count": 1558,
+            "id": 1656,
+            "image_background": "https://media.rawg.io/media/games/d4a/d4a85e0d7676e4f9bce23f349e44e75e.jpg",
             "language": "eng",
-            "name": "city",
-            "slug": "city"
+            "name": "mmo",
+            "slug": "mmo"
         },
         {
-            "games_count": 14829,
-            "id": 744,
-            "image_background": "https://media.rawg.io/media/games/278/27873379c6d27b968babbeefa9b44da3.jpg",
+            "games_count": 1199,
+            "id": 158,
+            "image_background": "https://media.rawg.io/media/screenshots/ef8/ef8201008461d1c102b6c11c4114d08e.jpg",
             "language": "eng",
-            "name": "friends",
-            "slug": "friends"
+            "name": "MMORPG",
+            "slug": "mmorpg"
         },
         {
-            "games_count": 1826,
-            "id": 3109,
-            "image_background": "https://media.rawg.io/media/games/4fe/4feffcec6315c5f5a96442a8444431ca.jpg",
+            "games_count": 2374,
+            "id": 171,
+            "image_background": "https://media.rawg.io/media/games/4be/4be6a6ad0364751a96229c56bf69be59.jpg",
             "language": "eng",
-            "name": "weapons",
-            "slug": "weapons"
+            "name": "PvE",
+            "slug": "pve"
         },
         {
-            "games_count": 9018,
-            "id": 624,
-            "image_background": "https://media.rawg.io/media/screenshots/732/73215f681f68d6463b78e8ffd6c99927.jpg",
+            "games_count": 322,
+            "id": 265,
+            "image_background": "https://media.rawg.io/media/screenshots/a65/a65e9f01832997a4d913b3ea86319af4.jpg",
             "language": "eng",
-            "name": "Monsters",
-            "slug": "monsters"
+            "name": "Class-Based",
+            "slug": "class-based"
         },
         {
-            "games_count": 3158,
-            "id": 820,
-            "image_background": "https://media.rawg.io/media/screenshots/fae/faef87e072c9156cab9acaf8a3bef244.jpg",
+            "games_count": 3,
+            "id": 65224,
+            "image_background": "https://media.rawg.io/media/games/d9e/d9e868382c48ec98c9b23b8fbe6a2045.jpg",
             "language": "eng",
-            "name": "secrets",
-            "slug": "secrets"
+            "name": "Conquistas Steam",
+            "slug": "conquistas-steam"
         },
         {
-            "games_count": 4314,
-            "id": 1652,
-            "image_background": "https://media.rawg.io/media/screenshots/a71/a716436bd36cbea4979b0ad7ecae578d.jpg",
+            "games_count": 4,
+            "id": 59654,
+            "image_background": "https://media.rawg.io/media/games/d9e/d9e868382c48ec98c9b23b8fbe6a2045.jpg",
             "language": "eng",
-            "name": "night",
-            "slug": "night"
+            "name": "multijogador",
+            "slug": "multijogador"
         },
         {
-            "games_count": 1621,
-            "id": 2889,
-            "image_background": "https://media.rawg.io/media/games/9ef/9eff74427541e502c1587a33f08dfca5.jpg",
+            "games_count": 2,
+            "id": 65223,
+            "image_background": "https://media.rawg.io/media/games/d9e/d9e868382c48ec98c9b23b8fbe6a2045.jpg",
             "language": "eng",
-            "name": "balance",
-            "slug": "balance"
+            "name": "Cooperativo online",
+            "slug": "cooperativo-online"
         },
         {
-            "games_count": 2150,
-            "id": 704,
-            "image_background": "https://media.rawg.io/media/screenshots/35b/35b8fcbc1ec2eae77b4aa75b48aae2c0.jpg",
+            "games_count": 2,
+            "id": 65222,
+            "image_background": "https://media.rawg.io/media/games/d9e/d9e868382c48ec98c9b23b8fbe6a2045.jpg",
             "language": "eng",
-            "name": "Traps",
-            "slug": "traps"
+            "name": "Um jogador",
+            "slug": "um-jogador"
         },
         {
-            "games_count": 1207,
-            "id": 769,
-            "image_background": "https://media.rawg.io/media/games/73d/73db43df633477d4604c7248292f34b2.jpg",
+            "games_count": 4,
+            "id": 49060,
+            "image_background": "https://media.rawg.io/media/games/d22/d22ea1bfb636fbf1a9c235cc304312a8.jpg",
             "language": "eng",
-            "name": "virus",
-            "slug": "virus"
+            "name": "cooperativo",
+            "slug": "cooperativo"
+        },
+        {
+            "games_count": 2,
+            "id": 65471,
+            "image_background": "https://media.rawg.io/media/games/d9e/d9e868382c48ec98c9b23b8fbe6a2045.jpg",
+            "language": "eng",
+            "name": "JxJ online",
+            "slug": "jxj-online"
+        },
+        {
+            "games_count": 2,
+            "id": 65470,
+            "image_background": "https://media.rawg.io/media/games/d9e/d9e868382c48ec98c9b23b8fbe6a2045.jpg",
+            "language": "eng",
+            "name": "JxJ",
+            "slug": "jxj"
+        },
+        {
+            "games_count": 2,
+            "id": 65473,
+            "image_background": "https://media.rawg.io/media/games/d9e/d9e868382c48ec98c9b23b8fbe6a2045.jpg",
+            "language": "eng",
+            "name": "Compras em aplicativo",
+            "slug": "compras-em-aplicativo"
+        },
+        {
+            "games_count": 1,
+            "id": 76393,
+            "image_background": "https://media.rawg.io/media/games/d9e/d9e868382c48ec98c9b23b8fbe6a2045.jpg",
+            "language": "eng",
+            "name": "Compatibilidade parcial com controle",
+            "slug": "compatibilidade-parcial-com-controle"
         }
     ],
     "tba": false,
-    "twitch_count": 26,
-    "updated": "2022-10-16T23:57:41",
+    "twitch_count": 100,
+    "updated": "2022-10-17T00:06:24",
     "user_game": null,
-    "website": "https://dyinglightgame.com/",
+    "website": "https://www.playlostark.com",
     "youtube_count": 1000000
 }

@@ -1,4 +1,4 @@
-from flask import Flask,render_template
+from flask import Flask,render_template,request
 from getFunction import *
 
 app = Flask(__name__)
@@ -19,4 +19,14 @@ def index():
         "index.html",
         top_games = top_games,
         top_games_this_month = top_games_this_month
+        )
+
+@app.route("/game/<gamename>", methods=['GET', 'POST'])
+def game(gamename):
+    if request.method == 'POST': 
+        name = request.form['gameslug']
+        gameinfo = get_game_info(name)
+        return render_template(
+            "game.html",
+            gameinfo = gameinfo
         )

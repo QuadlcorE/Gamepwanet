@@ -101,7 +101,7 @@ def get_game_info(game_id):
 
     response = requests.get(url, params = param)
     data = response.json()
-    write_txt(data)
+    #write_txt(data)
     #jprint(data)
     return data
 
