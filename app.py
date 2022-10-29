@@ -23,10 +23,10 @@ def index():
 
 @app.route("/game/<gamename>", methods=['GET', 'POST'])
 def game(gamename):
-    if request.method == 'POST': 
-        name = request.form['gameslug']
-        gameinfo = get_game_info(name)
-        return render_template(
-            "game.html",
-            gameinfo = gameinfo
+    #if request.method == 'POST': 
+    #name = request.form['gameslug']
+    gameinfo = get_game_info(gamename)
+    return render_template(
+        "game.html",
+        gameinfo = gameinfo
         )
