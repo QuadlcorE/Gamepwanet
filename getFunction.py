@@ -1,7 +1,7 @@
 import requests 
 import json
 
-from test2 import jprint, write_txt, current_month, current_year
+from test2 import *
 
 def get_top_games(number):
     '''Returns a list of dictionaries of the top 'number' popular games
@@ -105,6 +105,43 @@ def get_game_info(game_id):
     #jprint(data)
     return data
 
+def get_game_screenshots(game_id):
+    '''Returns a dictionary of image files
+    '''
+
+    param = {
+        "id" : str(game_id),
+        "page_size" : 10
+    }
+
+    url = "https://api.rawg.io/api/games/{game_pk}/screenshots?key=9584bc037067422aad0275f5f6af6650".format(game_pk = game_id)
+
+    response = requests.get(url, params = param)
+    data = response.json()
+
+    #append_txt(data)
+    #jprint(data)
+
+    return data["results"]
+
+def get_game_trailers(game_id):
+    '''Returns a dict of game trailers containing preview as string
+        and data as obj
+    '''
+    param = {
+        "id" : str(game_id)
+    }
+    
+    url = "https://api.rawg.io/api/games/{id}/movies?key=9584bc037067422aad0275f5f6af6650".format(id = game_id)
+
+    response = requests.get(url, params = param)
+    data = response.json()
+
+    append_txt(data)
+    jprint(data)
+
+    return data
+
 """
 listing = get_top_games_this_month(2) 
 for game in listing["results"]:
@@ -114,3 +151,5 @@ for game in listing["results"]:
 #get_game_screenshots("lost-ark")
 #get_game_background("a-plague-tale-requiem")
 #get_game_info("a-plague-tale-requiem")
+#get_game_screenshots("a-plague-tale-requiem")
+#get_game_trailers("vampire-the-masquerade-bloodlines-2")

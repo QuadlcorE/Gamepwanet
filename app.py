@@ -25,8 +25,12 @@ def index():
 def game(gamename):
     #if request.method == 'POST': 
     #name = request.form['gameslug']
-    gameinfo = get_game_info(gamename)
+    game_info = get_game_info(gamename)
+    game_trailer = get_game_trailers(gamename)
+    game_screenshots = get_game_screenshots(gamename)
     return render_template(
         "game.html",
-        gameinfo = gameinfo
+        gameinfo = game_info,        #remember to change this
+        gametrailer = game_trailer,
+        gamescreenshots = game_screenshots
         )

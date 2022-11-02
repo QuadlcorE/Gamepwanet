@@ -1,399 +1,427 @@
 {
-    "achievements_count": 156,
-    "added": 2090,
-    "added_by_status": {
-        "beaten": 21,
-        "dropped": 143,
-        "owned": 1811,
-        "playing": 40,
-        "toplay": 42,
-        "yet": 33
-    },
-    "additions_count": 0,
-    "alternative_names": [],
-    "background_image": "https://media.rawg.io/media/games/d9e/d9e868382c48ec98c9b23b8fbe6a2045.jpg",
-    "background_image_additional": "https://media.rawg.io/media/screenshots/85f/85f7aa38755629d329b61e3286202cac.jpg",
-    "clip": null,
-    "creators_count": 0,
-    "description": "<p>Explore seven vast, varied continents and the seas between them to find vibrant cultures, strange and fantastical beasts, and all the unexpected marvels waiting to be discovered. Delve into the secrets of Arkesia, prove your might in battles and raids, compete against other players in PvP, travel to distant islands in search of hidden riches, face packs of enemies and colossal bosses in the open world, and more.</p>",
-    "description_raw": "Explore seven vast, varied continents and the seas between them to find vibrant cultures, strange and fantastical beasts, and all the unexpected marvels waiting to be discovered. Delve into the secrets of Arkesia, prove your might in battles and raids, compete against other players in PvP, travel to distant islands in search of hidden riches, face packs of enemies and colossal bosses in the open world, and more.",
-    "developers": [
+    "count": 0,
+    "next": null,
+    "previous": null,
+    "results": []
+}{
+    "count": 0,
+    "next": null,
+    "previous": null,
+    "results": []
+}{
+    "count": 0,
+    "next": null,
+    "previous": null,
+    "results": []
+}{
+    "count": 6,
+    "next": null,
+    "previous": null,
+    "results": [
         {
-            "games_count": 5,
-            "id": 28980,
-            "image_background": "https://media.rawg.io/media/games/693/6939bd98977019e84dc361242c30d684.jpg",
-            "name": "Smilegate Entertainment",
-            "slug": "smilegate-entertainment"
+            "height": 759,
+            "id": 2882422,
+            "image": "https://media.rawg.io/media/screenshots/91d/91d6977a6afce4626da170f96c3155f9.jpg",
+            "is_deleted": false,
+            "width": 1350
+        },
+        {
+            "height": 759,
+            "id": 2882423,
+            "image": "https://media.rawg.io/media/screenshots/5b9/5b91e9678850abd6234628ede2f513b9.jpg",
+            "is_deleted": false,
+            "width": 1350
+        },
+        {
+            "height": 759,
+            "id": 2882424,
+            "image": "https://media.rawg.io/media/screenshots/b46/b4660d1847f4046563962e18dafb0ba6_Tu4fBu4.jpg",
+            "is_deleted": false,
+            "width": 1350
+        },
+        {
+            "height": 759,
+            "id": 2882425,
+            "image": "https://media.rawg.io/media/screenshots/90b/90b362c09954a17a1c81c786ac671bce.jpg",
+            "is_deleted": false,
+            "width": 1350
+        },
+        {
+            "height": 759,
+            "id": 2882426,
+            "image": "https://media.rawg.io/media/screenshots/760/7600bab6853da1784d20223dedd797ec.jpg",
+            "is_deleted": false,
+            "width": 1350
+        },
+        {
+            "height": 1080,
+            "id": 3314738,
+            "image": "https://media.rawg.io/media/screenshots/0a4/0a4cb5a8458b3a70f4ef7497cac19d31.jpg",
+            "is_deleted": false,
+            "width": 1920
         }
-    ],
-    "dominant_color": "0f0f0f",
-    "esrb_rating": {
-        "id": 4,
-        "name": "Mature",
-        "slug": "mature"
-    },
-    "game_series_count": 0,
-    "genres": [
+    ]
+}{
+    "count": 6,
+    "next": null,
+    "previous": null,
+    "results": [
         {
-            "games_count": 50250,
-            "id": 5,
-            "image_background": "https://media.rawg.io/media/games/214/214b29aeff13a0ae6a70fc4426e85991.jpg",
-            "name": "RPG",
-            "slug": "role-playing-games-rpg"
+            "height": 759,
+            "id": 2882422,
+            "image": "https://media.rawg.io/media/screenshots/91d/91d6977a6afce4626da170f96c3155f9.jpg",
+            "is_deleted": false,
+            "width": 1350
         },
         {
-            "games_count": 3047,
-            "id": 59,
-            "image_background": "https://media.rawg.io/media/games/b72/b7233d5d5b1e75e86bb860ccc7aeca85.jpg",
-            "name": "Massively Multiplayer",
-            "slug": "massively-multiplayer"
+            "height": 759,
+            "id": 2882423,
+            "image": "https://media.rawg.io/media/screenshots/5b9/5b91e9678850abd6234628ede2f513b9.jpg",
+            "is_deleted": false,
+            "width": 1350
+        },
+        {
+            "height": 759,
+            "id": 2882424,
+            "image": "https://media.rawg.io/media/screenshots/b46/b4660d1847f4046563962e18dafb0ba6_Tu4fBu4.jpg",
+            "is_deleted": false,
+            "width": 1350
+        },
+        {
+            "height": 759,
+            "id": 2882425,
+            "image": "https://media.rawg.io/media/screenshots/90b/90b362c09954a17a1c81c786ac671bce.jpg",
+            "is_deleted": false,
+            "width": 1350
+        },
+        {
+            "height": 759,
+            "id": 2882426,
+            "image": "https://media.rawg.io/media/screenshots/760/7600bab6853da1784d20223dedd797ec.jpg",
+            "is_deleted": false,
+            "width": 1350
+        },
+        {
+            "height": 1080,
+            "id": 3314738,
+            "image": "https://media.rawg.io/media/screenshots/0a4/0a4cb5a8458b3a70f4ef7497cac19d31.jpg",
+            "is_deleted": false,
+            "width": 1920
         }
-    ],
-    "id": 372576,
-    "metacritic": 81,
-    "metacritic_platforms": [
-        {
-            "metascore": 81,
-            "platform": {
-                "name": "PC",
-                "platform": 4,
-                "slug": "pc"
-            },
-            "url": "https://www.metacritic.com/game/pc/lost-ark"
-        }
-    ],
-    "metacritic_url": "https://www.metacritic.com/game/pc/lost-ark",
-    "movies_count": 0,
-    "name": "Lost Ark",
-    "name_original": "Lost Ark",
-    "parent_achievements_count": 156,
-    "parent_platforms": [
-        {
-            "platform": {
-                "id": 1,
-                "name": "PC",
-                "slug": "pc"
-            }
-        }
-    ],
-    "parents_count": 0,
-    "platforms": [
-        {
-            "platform": {
-                "games_count": 492759,
-                "id": 4,
-                "image": null,
-                "image_background": "https://media.rawg.io/media/games/73e/73eecb8909e0c39fb246f457b5d6cbbe.jpg",
-                "name": "PC",
-                "slug": "pc",
-                "year_end": null,
-                "year_start": null
-            },
-            "released_at": "2022-02-11",
-            "requirements": {
-                "minimum": "M\u00ednimos:\nRequer um processador e sistema operacional de 64 bits\nSO: Windows 10 (64-bit)\nProcessador: Intel\u00a0i3 ou AMD Ryzen\u00a03\nMem\u00f3ria: 8 GB de RAM\nPlaca de v\u00eddeo: NVIDIA GeForce GTX 460 / AMD HD6850\nDirectX: Vers\u00e3o 9.0c\nRede: Conex\u00e3o de internet banda larga\nArmazenamento: 50 GB de espa\u00e7o dispon\u00edvel\nOutras observa\u00e7\u00f5es: Necess\u00e1ria conex\u00e3o de internet para jogar, oferece compras no jogo",
-                "recommended": "Recomendados:\nRequer um processador e sistema operacional de 64 bits\nSO: Windows 10 (64-bit)\nProcessador: Intel\u00a0i5 ou AMD Ryzen\u00a05\nMem\u00f3ria: 16 GB de RAM\nPlaca de v\u00eddeo: NVIDIA GeForce GTX 1050\nDirectX: Vers\u00e3o 11\nRede: Conex\u00e3o de internet banda larga\nArmazenamento: 50 GB de espa\u00e7o dispon\u00edvel\nOutras observa\u00e7\u00f5es: Necess\u00e1ria conex\u00e3o de internet para jogar, oferece compras no jogo"
-            }
-        }
-    ],
-    "playtime": 10,
-    "publishers": [
-        {
-            "games_count": 4,
-            "id": 41420,
-            "image_background": "https://media.rawg.io/media/games/4ad/4ad7dc0f8a01abea9855309e91e933fc.jpg",
-            "name": "Amazon Games",
-            "slug": "amazon-games"
-        },
-        {
-            "games_count": 2,
-            "id": 35148,
-            "image_background": "https://media.rawg.io/media/games/d9e/d9e868382c48ec98c9b23b8fbe6a2045.jpg",
-            "name": "Mail.Ru Group",
-            "slug": "mailru-group"
-        }
-    ],
-    "rating": 3.35,
-    "rating_top": 4,
-    "ratings": [
-        {
-            "count": 63,
-            "id": 4,
-            "percent": 41.18,
-            "title": "recommended"
-        },
-        {
-            "count": 53,
-            "id": 3,
-            "percent": 34.64,
-            "title": "meh"
-        },
-        {
-            "count": 21,
-            "id": 1,
-            "percent": 13.73,
-            "title": "skip"
-        },
-        {
-            "count": 16,
-            "id": 5,
-            "percent": 10.46,
-            "title": "exceptional"
-        }
-    ],
-    "ratings_count": 149,
-    "reactions": {
-        "3": 1,
-        "7": 1
-    },
-    "reddit_count": 658,
-    "reddit_description": "Lost Ark, also known as LAO, is an MMORPG developed by Smilegate RPG and published by Amazon Games. First released in KR in November 2018. Now available in NA, SA and EU.",
-    "reddit_logo": "",
-    "reddit_name": "Lost Ark",
-    "reddit_url": "https://www.reddit.com/r/lostarkgame/",
-    "released": "2022-02-11",
-    "reviews_count": 153,
-    "reviews_text_count": 4,
-    "saturated_color": "0f0f0f",
-    "screenshots_count": 7,
-    "slug": "lost-ark",
-    "stores": [
-        {
-            "id": 698683,
-            "store": {
-                "domain": "store.steampowered.com",
-                "games_count": 68358,
-                "id": 1,
-                "image_background": "https://media.rawg.io/media/games/8cc/8cce7c0e99dcc43d66c8efd42f9d03e3.jpg",
-                "name": "Steam",
-                "slug": "steam"
-            },
-            "url": ""
-        }
-    ],
-    "suggestions_count": 666,
-    "tags": [
-        {
-            "games_count": 187897,
-            "id": 31,
-            "image_background": "https://media.rawg.io/media/games/021/021c4e21a1824d2526f925eff6324653.jpg",
-            "language": "eng",
-            "name": "Singleplayer",
-            "slug": "singleplayer"
-        },
-        {
-            "games_count": 33478,
-            "id": 7,
-            "image_background": "https://media.rawg.io/media/games/b7b/b7b8381707152afc7d91f5d95de70e39.jpg",
-            "language": "eng",
-            "name": "Multiplayer",
-            "slug": "multiplayer"
-        },
-        {
-            "games_count": 15650,
-            "id": 24,
-            "image_background": "https://media.rawg.io/media/games/b45/b45575f34285f2c4479c9a5f719d972e.jpg",
-            "language": "eng",
-            "name": "RPG",
-            "slug": "rpg"
-        },
-        {
-            "games_count": 3889,
-            "id": 9,
-            "image_background": "https://media.rawg.io/media/games/d69/d69810315bd7e226ea2d21f9156af629.jpg",
-            "language": "eng",
-            "name": "Online Co-Op",
-            "slug": "online-co-op"
-        },
-        {
-            "games_count": 22099,
-            "id": 64,
-            "image_background": "https://media.rawg.io/media/games/af7/af7a831001c5c32c46e950cc883b8cb7.jpg",
-            "language": "eng",
-            "name": "Fantasy",
-            "slug": "fantasy"
-        },
-        {
-            "games_count": 4728,
-            "id": 26,
-            "image_background": "https://media.rawg.io/media/games/4fb/4fb548e4816c84d1d70f1a228fb167cc.jpg",
-            "language": "eng",
-            "name": "Gore",
-            "slug": "gore"
-        },
-        {
-            "games_count": 5559,
-            "id": 34,
-            "image_background": "https://media.rawg.io/media/games/7f6/7f6cd70ba2ad57053b4847c13569f2d8.jpg",
-            "language": "eng",
-            "name": "Violent",
-            "slug": "violent"
-        },
-        {
-            "games_count": 4891,
-            "id": 79,
-            "image_background": "https://media.rawg.io/media/games/f87/f87457e8347484033cb34cde6101d08d.jpg",
-            "language": "eng",
-            "name": "Free to Play",
-            "slug": "free-to-play"
-        },
-        {
-            "games_count": 5276,
-            "id": 97,
-            "image_background": "https://media.rawg.io/media/games/8d4/8d46786ca86b1d95f3dc7e700e2dc4dd.jpg",
-            "language": "eng",
-            "name": "Action RPG",
-            "slug": "action-rpg"
-        },
-        {
-            "games_count": 6330,
-            "id": 157,
-            "image_background": "https://media.rawg.io/media/games/7f0/7f021d4a3577ac9d591a628a431fc2e5.jpg",
-            "language": "eng",
-            "name": "PvP",
-            "slug": "pvp"
-        },
-        {
-            "games_count": 2987,
-            "id": 68,
-            "image_background": "https://media.rawg.io/media/games/559/559bc0768f656ad0c63c54b80a82d680.jpg",
-            "language": "eng",
-            "name": "Hack and Slash",
-            "slug": "hack-and-slash"
-        },
-        {
-            "games_count": 2969,
-            "id": 121,
-            "image_background": "https://media.rawg.io/media/games/c22/c22d804ac753c72f2617b3708a625dec.jpg",
-            "language": "eng",
-            "name": "Character Customization",
-            "slug": "character-customization"
-        },
-        {
-            "games_count": 3546,
-            "id": 99,
-            "image_background": "https://media.rawg.io/media/games/d87/d87268c4b7b33b278cbc1f152db39729.jpg",
-            "language": "eng",
-            "name": "Isometric",
-            "slug": "isometric"
-        },
-        {
-            "games_count": 3771,
-            "id": 50,
-            "image_background": "https://media.rawg.io/media/games/260/26023c855f1769a93411d6a7ea084632.jpeg",
-            "language": "eng",
-            "name": "Sexual Content",
-            "slug": "sexual-content"
-        },
-        {
-            "games_count": 1558,
-            "id": 1656,
-            "image_background": "https://media.rawg.io/media/games/d4a/d4a85e0d7676e4f9bce23f349e44e75e.jpg",
-            "language": "eng",
-            "name": "mmo",
-            "slug": "mmo"
-        },
-        {
-            "games_count": 1199,
-            "id": 158,
-            "image_background": "https://media.rawg.io/media/screenshots/ef8/ef8201008461d1c102b6c11c4114d08e.jpg",
-            "language": "eng",
-            "name": "MMORPG",
-            "slug": "mmorpg"
-        },
-        {
-            "games_count": 2374,
-            "id": 171,
-            "image_background": "https://media.rawg.io/media/games/4be/4be6a6ad0364751a96229c56bf69be59.jpg",
-            "language": "eng",
-            "name": "PvE",
-            "slug": "pve"
-        },
-        {
-            "games_count": 322,
-            "id": 265,
-            "image_background": "https://media.rawg.io/media/screenshots/a65/a65e9f01832997a4d913b3ea86319af4.jpg",
-            "language": "eng",
-            "name": "Class-Based",
-            "slug": "class-based"
-        },
-        {
-            "games_count": 3,
-            "id": 65224,
-            "image_background": "https://media.rawg.io/media/games/d9e/d9e868382c48ec98c9b23b8fbe6a2045.jpg",
-            "language": "eng",
-            "name": "Conquistas Steam",
-            "slug": "conquistas-steam"
-        },
-        {
-            "games_count": 4,
-            "id": 59654,
-            "image_background": "https://media.rawg.io/media/games/d9e/d9e868382c48ec98c9b23b8fbe6a2045.jpg",
-            "language": "eng",
-            "name": "multijogador",
-            "slug": "multijogador"
-        },
-        {
-            "games_count": 2,
-            "id": 65223,
-            "image_background": "https://media.rawg.io/media/games/d9e/d9e868382c48ec98c9b23b8fbe6a2045.jpg",
-            "language": "eng",
-            "name": "Cooperativo online",
-            "slug": "cooperativo-online"
-        },
-        {
-            "games_count": 2,
-            "id": 65222,
-            "image_background": "https://media.rawg.io/media/games/d9e/d9e868382c48ec98c9b23b8fbe6a2045.jpg",
-            "language": "eng",
-            "name": "Um jogador",
-            "slug": "um-jogador"
-        },
-        {
-            "games_count": 4,
-            "id": 49060,
-            "image_background": "https://media.rawg.io/media/games/d22/d22ea1bfb636fbf1a9c235cc304312a8.jpg",
-            "language": "eng",
-            "name": "cooperativo",
-            "slug": "cooperativo"
-        },
-        {
-            "games_count": 2,
-            "id": 65471,
-            "image_background": "https://media.rawg.io/media/games/d9e/d9e868382c48ec98c9b23b8fbe6a2045.jpg",
-            "language": "eng",
-            "name": "JxJ online",
-            "slug": "jxj-online"
-        },
-        {
-            "games_count": 2,
-            "id": 65470,
-            "image_background": "https://media.rawg.io/media/games/d9e/d9e868382c48ec98c9b23b8fbe6a2045.jpg",
-            "language": "eng",
-            "name": "JxJ",
-            "slug": "jxj"
-        },
-        {
-            "games_count": 2,
-            "id": 65473,
-            "image_background": "https://media.rawg.io/media/games/d9e/d9e868382c48ec98c9b23b8fbe6a2045.jpg",
-            "language": "eng",
-            "name": "Compras em aplicativo",
-            "slug": "compras-em-aplicativo"
-        },
-        {
-            "games_count": 1,
-            "id": 76393,
-            "image_background": "https://media.rawg.io/media/games/d9e/d9e868382c48ec98c9b23b8fbe6a2045.jpg",
-            "language": "eng",
-            "name": "Compatibilidade parcial com controle",
-            "slug": "compatibilidade-parcial-com-controle"
-        }
-    ],
-    "tba": false,
-    "twitch_count": 100,
-    "updated": "2022-10-17T00:06:24",
-    "user_game": null,
-    "website": "https://www.playlostark.com",
-    "youtube_count": 1000000
+    ]
+}{
+    "count": 0,
+    "next": null,
+    "previous": null,
+    "results": []
+}{
+    "count": 0,
+    "next": null,
+    "previous": null,
+    "results": []
+}{
+    "count": 0,
+    "next": null,
+    "previous": null,
+    "results": []
+}{
+    "count": 0,
+    "next": null,
+    "previous": null,
+    "results": []
+}{
+    "count": 0,
+    "next": null,
+    "previous": null,
+    "results": []
+}{
+    "count": 0,
+    "next": null,
+    "previous": null,
+    "results": []
+}{
+    "count": 0,
+    "next": null,
+    "previous": null,
+    "results": []
+}{
+    "count": 0,
+    "next": null,
+    "previous": null,
+    "results": []
+}{
+    "count": 0,
+    "next": null,
+    "previous": null,
+    "results": []
+}{
+    "count": 0,
+    "next": null,
+    "previous": null,
+    "results": []
+}{
+    "count": 0,
+    "next": null,
+    "previous": null,
+    "results": []
+}{
+    "count": 0,
+    "next": null,
+    "previous": null,
+    "results": []
+}{
+    "count": 0,
+    "next": null,
+    "previous": null,
+    "results": []
+}{
+    "count": 0,
+    "next": null,
+    "previous": null,
+    "results": []
+}{
+    "count": 0,
+    "next": null,
+    "previous": null,
+    "results": []
+}{
+    "count": 0,
+    "next": null,
+    "previous": null,
+    "results": []
+}{
+    "count": 0,
+    "next": null,
+    "previous": null,
+    "results": []
+}{
+    "count": 0,
+    "next": null,
+    "previous": null,
+    "results": []
+}{
+    "count": 0,
+    "next": null,
+    "previous": null,
+    "results": []
+}{
+    "count": 0,
+    "next": null,
+    "previous": null,
+    "results": []
+}{
+    "count": 0,
+    "next": null,
+    "previous": null,
+    "results": []
+}{
+    "count": 0,
+    "next": null,
+    "previous": null,
+    "results": []
+}{
+    "count": 0,
+    "next": null,
+    "previous": null,
+    "results": []
+}{
+    "count": 0,
+    "next": null,
+    "previous": null,
+    "results": []
+}{
+    "count": 0,
+    "next": null,
+    "previous": null,
+    "results": []
+}{
+    "count": 0,
+    "next": null,
+    "previous": null,
+    "results": []
+}{
+    "count": 0,
+    "next": null,
+    "previous": null,
+    "results": []
+}{
+    "count": 0,
+    "next": null,
+    "previous": null,
+    "results": []
+}{
+    "count": 0,
+    "next": null,
+    "previous": null,
+    "results": []
+}{
+    "count": 0,
+    "next": null,
+    "previous": null,
+    "results": []
+}{
+    "count": 0,
+    "next": null,
+    "previous": null,
+    "results": []
+}{
+    "count": 0,
+    "next": null,
+    "previous": null,
+    "results": []
+}{
+    "count": 0,
+    "next": null,
+    "previous": null,
+    "results": []
+}{
+    "count": 0,
+    "next": null,
+    "previous": null,
+    "results": []
+}{
+    "count": 0,
+    "next": null,
+    "previous": null,
+    "results": []
+}{
+    "count": 0,
+    "next": null,
+    "previous": null,
+    "results": []
+}{
+    "count": 0,
+    "next": null,
+    "previous": null,
+    "results": []
+}{
+    "count": 0,
+    "next": null,
+    "previous": null,
+    "results": []
+}{
+    "count": 0,
+    "next": null,
+    "previous": null,
+    "results": []
+}{
+    "count": 0,
+    "next": null,
+    "previous": null,
+    "results": []
+}{
+    "count": 0,
+    "next": null,
+    "previous": null,
+    "results": []
+}{
+    "count": 0,
+    "next": null,
+    "previous": null,
+    "results": []
+}{
+    "count": 0,
+    "next": null,
+    "previous": null,
+    "results": []
+}{
+    "count": 0,
+    "next": null,
+    "previous": null,
+    "results": []
+}{
+    "count": 0,
+    "next": null,
+    "previous": null,
+    "results": []
+}{
+    "count": 0,
+    "next": null,
+    "previous": null,
+    "results": []
+}{
+    "count": 0,
+    "next": null,
+    "previous": null,
+    "results": []
+}{
+    "count": 0,
+    "next": null,
+    "previous": null,
+    "results": []
+}{
+    "count": 0,
+    "next": null,
+    "previous": null,
+    "results": []
+}{
+    "count": 0,
+    "next": null,
+    "previous": null,
+    "results": []
+}{
+    "count": 0,
+    "next": null,
+    "previous": null,
+    "results": []
+}{
+    "count": 0,
+    "next": null,
+    "previous": null,
+    "results": []
+}{
+    "count": 0,
+    "next": null,
+    "previous": null,
+    "results": []
+}{
+    "count": 0,
+    "next": null,
+    "previous": null,
+    "results": []
+}{
+    "count": 0,
+    "next": null,
+    "previous": null,
+    "results": []
+}{
+    "count": 0,
+    "next": null,
+    "previous": null,
+    "results": []
+}{
+    "count": 0,
+    "next": null,
+    "previous": null,
+    "results": []
+}{
+    "count": 0,
+    "next": null,
+    "previous": null,
+    "results": []
+}{
+    "count": 0,
+    "next": null,
+    "previous": null,
+    "results": []
+}{
+    "count": 0,
+    "next": null,
+    "previous": null,
+    "results": []
+}{
+    "count": 0,
+    "next": null,
+    "previous": null,
+    "results": []
+}{
+    "count": 0,
+    "next": null,
+    "previous": null,
+    "results": []
+}{
+    "count": 0,
+    "next": null,
+    "previous": null,
+    "results": []
 }

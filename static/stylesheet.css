@@ -2,6 +2,15 @@
     font-family: 'Righteous', serif;
 }
 
+a{
+    text-decoration: none;
+    color: #fff;
+    transition: 1s;
+}
+a:hover{
+    color: rgb(205, 205, 205)
+}
+
 body{
     font-family: 'Righteous', serif;
 }
@@ -23,6 +32,11 @@ header {
     color: white;
 }
 
+main {
+    margin-bottom: 50px;
+    
+}
+
 
 .name-tags {
     font-family: 'Righteous', serif;
@@ -35,7 +49,7 @@ header {
 
 .name-tags:hover {
     color: white;
-    font-size: 180%;
+    font-size: 180vw;
     word-spacing: 5px;
     word-wrap: break-word;
     white-space: normal;
@@ -100,6 +114,7 @@ header {
 
 main{
     background-color: grey-900;
+    color: white;
 }
 
 @media all and (min-width: 992px) {
@@ -164,4 +179,38 @@ input[type=search]{
     color: white;
  }
 
- 
+ .bg-image-mask {
+    background-color: transparent;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    } 
+
+@media screen and (max-width: 470px){
+    .game-about {
+        margin: 5px auto 0 auto;
+        padding: 5px;
+        overflow: auto;
+        font-size: 3vw;
+    }
+}
+
+@media screen and (min-width: 471px) and (max-width: 770px) {
+    .game-about {
+        margin: 10px auto 0 auto;
+        padding: 10px;
+        overflow: auto;
+        font-size: 15px;
+    }
+}
+
+@media screen and (min-width: 771px) {
+    .game-about {
+        margin: 2vw auto 0 auto;
+        padding: 2rem;
+        overflow: auto;
+    }
+    
+}

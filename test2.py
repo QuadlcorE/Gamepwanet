@@ -26,6 +26,11 @@ def write_txt(data):
     with open("data.txt", "w") as f:
         f.write(txt)
 
+def append_txt(data):
+    txt = json.dumps(data, sort_keys=True, indent=4)
+    with open("data.txt", "a") as f:
+        f.write(txt)
+
 def current_year():
     today = datetime.now()
     return today.year
