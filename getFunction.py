@@ -1,7 +1,9 @@
-import requests 
 import json
 
+import requests
+
 from test2 import *
+
 
 def get_top_games(number):
     '''Returns a list of dictionaries of the top 'number' popular games
@@ -137,19 +139,27 @@ def get_game_trailers(game_id):
     response = requests.get(url, params = param)
     data = response.json()
 
-    append_txt(data)
-    jprint(data)
+    #append_txt(data)
+    #jprint(data)
 
     return data
 
-"""
-listing = get_top_games_this_month(2) 
-for game in listing["results"]:
-    jprint(game) 
-"""
-#get_top_games()
-#get_game_screenshots("lost-ark")
-#get_game_background("a-plague-tale-requiem")
-#get_game_info("a-plague-tale-requiem")
-#get_game_screenshots("a-plague-tale-requiem")
-#get_game_trailers("vampire-the-masquerade-bloodlines-2")
+def search_for_a_game(search_query):
+    '''
+    Retuerns unknown for now
+    '''
+
+    param = {
+        "page_size" : 21,
+        "search" : search_query
+    }
+
+    url = "https://api.rawg.io/api/games?key=9584bc037067422aad0275f5f6af6650"
+
+    response = requests.get(url, params = param)
+    data = response.json()
+
+    #write_txt(data)
+    #jprint(data)
+
+    return data 

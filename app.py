@@ -1,4 +1,5 @@
-from flask import Flask,render_template,request
+from flask import *
+
 from getFunction import *
 
 app = Flask(__name__)
@@ -20,6 +21,19 @@ def index():
         top_games = top_games,
         top_games_this_month = top_games_this_month
         )
+
+@app.route("/search", methods=['GET','POST'])
+def search():
+    try:
+        search_query = request.form.get("search_query")
+        search_result = search_for_a_game(search_query)
+        return render_template(
+            "search.html",
+            search_query = search_query,
+            search_results = search_result
+        )
+    except: 
+        return redirect(url_for('index'))
 
 @app.route("/game/<gamename>", methods=['GET', 'POST'])
 def game(gamename):
