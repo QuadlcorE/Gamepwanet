@@ -11,5 +11,83 @@
                 </div>
             </div>
         </div>
+        
+        <div class="d-flex bodycontent">
+          <h3 class="text-center">
+            Genres<p>
+            {% for genre in gameinfo["genres"] %}
+              <h4>{{genre["name"]}},</h4>
+            {% endfor %}</p>
+            Genres<p>
+              {% for genre in gameinfo["genres"] %}
+                <h4>{{genre["name"]}},</h4>
+              {% endfor %}</p>
+            Platforms<p>
+            {% for genre in gameinfo["platforms"] %}
+              <h4>{{genre["name"]}},</h4>
+            {% endfor %}</p>
+          </h3> 
 
+            <section class="pure-g entryBar">
+                
+              {#
+                  <div id="carouselscreenshots" class="carousel slide pointer-event" data-bs-ride="carousel">
+
+                      <div class="carousel-indicators">                        
+                        {%for photo in game_screenshots-%}
+                          {% if photo["index"] == 0 -%}
+                            <button type="button" data-mdb-target="#carouselscreenshots" data-mdb-slide-to="{{photo['index']}}" class="active" aria-current="true" aria-label="Slide {{photo['index']+1}}"></button>
+                          {% else %}
+                            <button type="button" data-mdb-target="#carouselscreenshots" data-mdb-slide-to="{{photo['index']}}" aria-label="Slide {{photo['index']+1}}"></button>
+                          {% endif %}
+                        {% endfor %}
+                      </div>
+                    
+
+                      <div class="carousel-inner">
+                        {% for photo in game_screenshots %}
+
+                          {% if photo["index"] == 0 -%}
+                            <div class="carousel-item active">
+                          {% else %}
+                            <div class="carousel-item ">
+                          {% endif %}
+                          <!-- Single item -->
+                            <img src="{{photo['image']}}" class="d-block w-100">
+                            <div class="carousel-caption text-start">
+                            </div>
+                          </div>
+                        {% endfor %}  
+                      </div>
+
+                      
+                      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+
+                      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+
+                      </div>
+                    </div>  
+                  </div>
+              #}
+                  
+                    <div class="row g-3">
+                      
+                        {% for photo in game_screenshots %}
+                        <div class="col-lg-4 col-md-12 mb-4 mb-lg-0"> 
+                          <img src="{{ photo['image']}}" class="w-100 shadow-1-strong rounded mb-4" alt="Boat on Calm Water" />
+                        </div>
+                        {% endfor %}
+                    </div>  
+                    
+                      
+                    
+                  
+            </section>
+        </div>
 {% endblock %}

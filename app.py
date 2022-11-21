@@ -40,11 +40,17 @@ def game(gamename):
     #if request.method == 'POST': 
     #name = request.form['gameslug']
     game_info = get_game_info(gamename)
-    game_trailer = get_game_trailers(gamename)
     game_screenshots = get_game_screenshots(gamename)
+    tmp = 0
+    for photo in game_screenshots:
+        photo["index"] = tmp
+        tmp+=1
+    
+    #game_trailer = get_game_trailers(gamename)
+
     return render_template(
         "game.html",
         gameinfo = game_info,        #remember to change this
-        gametrailer = game_trailer,
-        gamescreenshots = game_screenshots
+        #gametrailer = game_trailer,
+        game_screenshots = game_screenshots
         )

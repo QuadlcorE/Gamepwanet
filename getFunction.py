@@ -163,3 +163,5 @@ def search_for_a_game(search_query):
     #jprint(data)
 
     return data 
+
+get_game_screenshots("a-plague-tale-innocence")

@@ -37,4 +37,15 @@
 
     </div>
 </div>
+
+{#
+<div class="d-flex justify-content-center">
+  <nav aria-label="Page navigation example ">
+    <ul class="pagination">
+      <li class="page-item"><a class="page-link" href="{% if search_results['previous']%}{{search_results['previous']}}{%else%}#{%endif%}">Previous</a></li>
+      <li class="page-item"><a class="page-link" href="{% if search_results['next']%}{{search_results['next']}}{%else%}#{%endif%}">Next</a></li>
+    </ul>
+  </nav>
+</div>
+#}
 {% endblock %}

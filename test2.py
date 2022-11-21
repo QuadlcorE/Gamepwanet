@@ -1,6 +1,8 @@
-import requests
 import json
 from datetime import datetime
+
+import requests
+
 
 def jprint(obj):
     # create a formatted string of the Python JSON object
