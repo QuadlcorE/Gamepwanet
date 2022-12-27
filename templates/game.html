@@ -4,7 +4,7 @@
     
         <div class="bg-image-mask d-flex" src="{{ gameinfo['background_image_additional'] }}" style="background-image: linear-gradient(rgba(33, 37, 41, 1) 5%, rgba(33, 37, 41, 0.5) 40%, rgba(33, 37, 41, 1)), url('{{ gameinfo['background_image_additional'] }}');">
             <div class="container">
-                <h2 class="text-center text-warp fs-1 fw-bold "> {{gameinfo['name']}} </h2>
+                <h2 class="text-center text-warp fs-1 fw-bold "> <a href="{{gameinfo['website']}}">{{gameinfo['name']}}</a> </h2>
                 <div class="game-about">
                     <h3 class="text-left text-warp fs-1"></h3>
                     {{gameinfo['description']|safe}}
@@ -12,82 +12,116 @@
             </div>
         </div>
         
-        <div class="d-flex bodycontent">
-          <h3 class="text-center">
-            Genres<p>
-            {% for genre in gameinfo["genres"] %}
-              <h4>{{genre["name"]}},</h4>
-            {% endfor %}</p>
-            Genres<p>
-              {% for genre in gameinfo["genres"] %}
-                <h4>{{genre["name"]}},</h4>
-              {% endfor %}</p>
-            Platforms<p>
-            {% for genre in gameinfo["platforms"] %}
-              <h4>{{genre["name"]}},</h4>
-            {% endfor %}</p>
-          </h3> 
+        <div class="d-grid gap-5">
 
-            <section class="pure-g entryBar">
-                
-              {#
-                  <div id="carouselscreenshots" class="carousel slide pointer-event" data-bs-ride="carousel">
+          <div class="container p-4 text-center">
+            <div class="row">
+              <div class="col">
+                <h4 class="text-center text-warp fs-1">Genres</h4><p>
+                  <h3 class= "text-center text-warp ">{% for genre in gameinfo["genres"] %}  {{genre["name"]}},   {% endfor %}</h3>
+                </p>
+              </div>
 
-                      <div class="carousel-indicators">                        
-                        {%for photo in game_screenshots-%}
-                          {% if photo["index"] == 0 -%}
-                            <button type="button" data-mdb-target="#carouselscreenshots" data-mdb-slide-to="{{photo['index']}}" class="active" aria-current="true" aria-label="Slide {{photo['index']+1}}"></button>
-                          {% else %}
-                            <button type="button" data-mdb-target="#carouselscreenshots" data-mdb-slide-to="{{photo['index']}}" aria-label="Slide {{photo['index']+1}}"></button>
-                          {% endif %}
-                        {% endfor %}
-                      </div>
-                    
+              <div class="col">
+                <h4 class="text-center text-warp fs-1">ESRB</h4><p>
+                  <h3 class="text-center text-warp "> {{gameinfo["esrb_rating"]["name"]}}</h3>
+                </p>
+              </div>
 
-                      <div class="carousel-inner">
-                        {% for photo in game_screenshots %}
+              <div class="col">
+                <h4 class="text-center text-warp fs-1"> <a href="{{gameinfo['metacritic_url']}}">Metacritic <a></h4><p>
+                  <h3 class="text-center text-warp"> {{gameinfo['metacritic']}}</h3>
+                </p>
+              </div>
 
-                          {% if photo["index"] == 0 -%}
-                            <div class="carousel-item active">
-                          {% else %}
-                            <div class="carousel-item ">
-                          {% endif %}
-                          <!-- Single item -->
-                            <img src="{{photo['image']}}" class="d-block w-100">
-                            <div class="carousel-caption text-start">
-                            </div>
-                          </div>
-                        {% endfor %}  
-                      </div>
+          </div>
 
-                      
-                      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                      </button>
-
-                      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                      </button>
-
-                      </div>
-                    </div>  
-                  </div>
-              #}
+          <div class="d-flex p-4 bodycontent">
+              <section class="pure-g entryBar">
                   
-                    <div class="row g-3">
-                      
-                        {% for photo in game_screenshots %}
-                        <div class="col-lg-4 col-md-12 mb-4 mb-lg-0"> 
-                          <img src="{{ photo['image']}}" class="w-100 shadow-1-strong rounded mb-4" alt="Boat on Calm Water" />
+                {#
+                    <div id="carouselscreenshots" class="carousel slide pointer-event" data-bs-ride="carousel">
+
+                        <div class="carousel-indicators">                        
+                          {%for photo in game_screenshots-%}
+                            {% if photo["index"] == 0 -%}
+                              <button type="button" data-mdb-target="#carouselscreenshots" data-mdb-slide-to="{{photo['index']}}" class="active" aria-current="true" aria-label="Slide {{photo['index']+1}}"></button>
+                            {% else %}
+                              <button type="button" data-mdb-target="#carouselscreenshots" data-mdb-slide-to="{{photo['index']}}" aria-label="Slide {{photo['index']+1}}"></button>
+                            {% endif %}
+                          {% endfor %}
                         </div>
-                        {% endfor %}
-                    </div>  
+                      
+
+                        <div class="carousel-inner">
+                          {% for photo in game_screenshots %}
+
+                            {% if photo["index"] == 0 -%}
+                              <div class="carousel-item active">
+                            {% else %}
+                              <div class="carousel-item ">
+                            {% endif %}
+                            <!-- Single item -->
+                              <img src="{{photo['image']}}" class="d-block w-100">
+                              <div class="carousel-caption text-start">
+                              </div>
+                            </div>
+                          {% endfor %}  
+                        </div>
+
+                        
+                        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+
+                        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+
+                        </div>
+                      </div>  
+                    </div>
+                #}
                     
+                      <div class="row g-3">
+                        
+                          {% for photo in game_screenshots %}
+                          <div class="col-lg-4 col-md-12 mb-4 mb-lg-0"> 
+                            <img id="{{photo['image']}}" src="{{ photo['image']}}" class="w-100 shadow-1-strong rounded mb-4"  />
+                          </div>
+                          <!-- REVISIT THIS --> 
+                          <!-- The Modal -->
+                          <div id="myModal" class="modal">
+
+                            <!-- The Close Button -->
+                            <span class="close">&times;</span>
+
+                            <!-- Modal Content (The Image) -->
+                            <img class="modal-content" id="{{photo['image']}}">
+
+                            <!-- Modal Caption (Image Text) -->
+                            <div id="caption"></div>
+                          </div>             
+                          {% endfor %}
+                      </div>  
+                      
+                
                       
                     
-                  
-            </section>
+              </section>
+          </div>
+
+          <div class="row p-4">
+            <div class="col"></div>
+            {%for publisher in gameinfo['publishers']%}
+              <div class="col-md-auto">
+                <h2 class="text-center text-warp fs-3">{{publisher['name']}}</h2>
+              </div>
+            {% endfor%}
+            <div class="col"></div>
+          </div>
+
         </div>
 {% endblock %}
