@@ -155,7 +155,7 @@ main{
 }
 
 
-input[type=search]{
+/* input[type=search]{
     color: #666157;
     background: #343a40;
     font-size: 16px;
@@ -173,7 +173,7 @@ input[type=search]{
 
  input[type=search]:hover {
     background-color: white;
- }
+ } */
 
  .container{
     color: white;
@@ -214,7 +214,7 @@ input[type=search]{
     }
     
 }
-
+/* 
 nav li a {
     color: #666157;
     background: #343a40;
@@ -229,7 +229,7 @@ nav li a {
     border-top: none;
     border-left: none;
     transition: 0.5s;
-}
+} */
 
 .bodycontent {
     margin-left: 10%;
