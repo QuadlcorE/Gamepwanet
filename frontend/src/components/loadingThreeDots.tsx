@@ -1,4 +1,4 @@
-import React, { type JSX, type ReactElement, type SVGProps } from 'react'
+import { type JSX, type ReactElement, type SVGProps } from 'react'
 
 export default function LoadingThreeDots(
 	props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>,
