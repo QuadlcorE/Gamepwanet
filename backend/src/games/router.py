@@ -15,3 +15,13 @@ def get_top_games(time: str="month", count: int=5):
 def get_upcoming_games(count: int=3):
     results = retrieve_upcoming_games(count)
     return results
+
+@router.get("/hot")
+def get_hot_games(count: int=10):
+    results = retrieve_hot_games(count)
+    return results
+    ...
+    
+@router.get("/hot/{month_id}")
+def get_upcoming_games(month_id, count: int=10):
+    ...
