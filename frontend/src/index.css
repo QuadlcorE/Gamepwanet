@@ -5,7 +5,15 @@
   --font-sans: "Righteous", cursive;
 }
 
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
 body {
   font-family: var(--font-sans);
+  margin: 0;
+  background-color: #000;
 }
 
