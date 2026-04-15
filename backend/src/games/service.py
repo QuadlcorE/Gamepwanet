@@ -42,6 +42,7 @@ def retrieve_hot_games(page_size: int ):
     return games
 
 def retrieve_hot_games_by_month(page_size: int, month: int):
+    month = int(month)
     today = date.today()
     year = today.year if month <= today.month else today.year - 1
 
@@ -52,7 +53,7 @@ def retrieve_hot_games_by_month(page_size: int, month: int):
     start_date = start_date.strftime("%Y-%m-%d")
     end_date = end_date.strftime("%Y-%m-%d")
     
-    payload = { "key": api_key, "page_size": page_size, "dates": f"{start_date},{end_date}", "ordering": "popularity"}
+    payload = { "key": api_key, "page_size": page_size, "dates": f"{start_date},{end_date}", "ordering": "-rating"}
     
     response = requests.get(url=url, params=payload)
     response_json = response.json()

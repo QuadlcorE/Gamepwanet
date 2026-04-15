@@ -1,10 +1,21 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from .games import router as games_router
+from .users import router as user_router
+from .auth import router as auth_router
+from .database import Base, engine
+
+# Import models so SQLAlchemy registers them with Base before create_all
+from .auth import models as auth_models  # noqa: F401
+from .users import models as user_models  # noqa: F401
+
+# Create all tables on startup
+Base.metadata.create_all(bind=engine)
 
 app = FastAPI()
 
 origins = ["*"]
+
 
 app.add_middleware(
     CORSMiddleware,
@@ -15,6 +26,8 @@ app.add_middleware(
 )
 
 app.include_router(games_router.router)
+app.include_router(user_router.router)
+app.include_router(auth_router.router)
 
 @app.get("/")
 def root():
