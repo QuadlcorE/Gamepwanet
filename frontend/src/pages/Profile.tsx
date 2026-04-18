@@ -1,7 +1,7 @@
 import { useEffect, useState, type ReactNode } from "react";
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router";
-import { Heart, LibraryBig, Sparkles } from "lucide-react";
+import { Heart, LibraryBig } from "lucide-react";
 import TopBar from "../components/topbar";
 import { getStoredEmail } from "../lib/auth";
 import { getUserProfile } from "../lib/profile";
@@ -31,7 +31,7 @@ function formatReleaseDate(value: string | null) {
 
 function GameTile({ game, accent }: { game: GameInfo; accent: string }) {
   return (
-    <article className="overflow-hidden rounded-[1.6rem] border border-white/10 bg-white/[0.04] shadow-[0_22px_60px_rgba(0,0,0,0.28)] transition-transform duration-300 hover:-translate-y-1">
+    <article className="overflow-hidden rounded-[1.6rem] border border-white/10 bg-white/4 shadow-[0_22px_60px_rgba(0,0,0,0.28)] transition-transform duration-300 hover:-translate-y-1">
       <div
         className="h-44 bg-cover bg-center"
         style={{
@@ -80,7 +80,7 @@ function CollectionSection({
   accent: string;
 }) {
   return (
-    <section className="rounded-[2rem] border border-white/10 bg-white/[0.03] p-6 shadow-[0_25px_80px_rgba(0,0,0,0.22)] lg:p-8">
+    <section className="rounded-[2rem] border border-white/10 bg-white/0.3 p-6 shadow-[0_25px_80px_rgba(0,0,0,0.22)] lg:p-8">
       <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
         <div className="text-left">
           <p className="text-xs uppercase tracking-[0.4em] text-white/35">{eyebrow}</p>
@@ -163,7 +163,7 @@ export default function Profile() {
       <div className="min-h-screen bg-[#050608] text-white">
         <TopBar />
         <main className="mx-auto w-full max-w-7xl px-6 pb-16 pt-6">
-          <section className="overflow-hidden rounded-[2.25rem] border border-white/10 bg-[radial-gradient(circle_at_top_left,_rgba(251,191,36,0.2),_transparent_32%),radial-gradient(circle_at_top_right,_rgba(16,185,129,0.2),_transparent_30%),linear-gradient(145deg,_rgba(255,255,255,0.06),_rgba(255,255,255,0.02))] p-8 shadow-[0_30px_120px_rgba(0,0,0,0.4)] lg:p-10">
+          <section className="overflow-hidden rounded-[2.25rem] border border-white/10 bg-[radial-gradient(circle_at_top_left,rgba(251,191,36,0.2),transparent_32%),radial-gradient(circle_at_top_right,rgba(16,185,129,0.2),transparent_30%),linear-gradient(145deg,rgba(255,255,255,0.06),rgba(255,255,255,0.02))] p-8 shadow-[0_30px_120px_rgba(0,0,0,0.4)] lg:p-10">
             <div className="flex flex-col gap-10 lg:flex-row lg:items-end lg:justify-between">
               <div className="max-w-3xl text-left">
                 <p className="text-xs uppercase tracking-[0.45em] text-white/45">Profile</p>
@@ -190,7 +190,7 @@ export default function Profile() {
           </section>
 
           {isLoading ? (
-            <section className="mt-10 rounded-[2rem] border border-white/10 bg-white/[0.03] px-6 py-12 text-left">
+            <section className="mt-10 rounded-[2rem] border border-white/10 bg-white/3 px-6 py-12 text-left">
               <p className="text-xs uppercase tracking-[0.35em] text-white/40">Loading</p>
               <h2 className="mt-4 text-3xl font-semibold text-white">Building your profile view</h2>
               <p className="mt-3 max-w-2xl text-sm leading-6 text-white/60">
