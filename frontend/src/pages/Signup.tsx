@@ -3,6 +3,7 @@ import { Helmet } from "react-helmet-async";
 import { Link, useNavigate } from "react-router";
 import TopBar from "../components/topbar";
 import { loginUser, signupUser, storeSession } from "../lib/auth";
+import SwitchConsole from "../components/3D/switch";
 
 export default function Signup() {
   const navigate = useNavigate();
@@ -37,8 +38,12 @@ export default function Signup() {
       <div className="min-h-screen bg-black text-white">
         <TopBar />
         <main className="mx-auto flex min-h-[calc(100vh-88px)] w-full max-w-6xl items-center justify-center px-6 py-10">
-          <section className="grid w-full max-w-5xl overflow-hidden rounded-[2rem] border border-white/10 bg-neutral-950 shadow-[0_30px_120px_rgba(0,0,0,0.45)] lg:grid-cols-[0.95fr_1.05fr]">
-            <div className="flex flex-col justify-between border-b border-white/10 bg-[radial-gradient(circle_at_top_right,_rgba(251,191,36,0.28),_transparent_35%),linear-gradient(135deg,_rgba(255,255,255,0.06),_rgba(255,255,255,0.02))] p-8 lg:border-b-0 lg:border-r lg:p-12">
+          <div className="absolute z-0 w-full h-[93vh]">
+            <SwitchConsole/>
+          </div>
+
+          <section className="absolute z-10 grid w-full max-w-5xl overflow-hidden rounded-[2rem] border border-white/10  shadow-[0_30px_120px_rgba(0,0,0,0.45)] lg:grid-cols-[0.95fr_1.05fr]">
+            <div className="flex flex-col justify-between border-b border-white/10 bg-[radial-gradient(circle_at_top_right,rgba(251,191,36,0.28),transparent_35%),linear-gradient(135deg,rgba(255,255,255,0.06),rgba(255,255,255,0.02))] p-8 lg:border-b-0 lg:border-r lg:p-12">
               <div>
                 <p className="text-xs uppercase tracking-[0.4em] text-white">
                   Join In

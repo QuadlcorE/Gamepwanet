@@ -4,7 +4,6 @@ import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Profile from "./pages/Profile";
 import Signup from "./pages/Signup";
-import TestScreen from "./pages/3dtest";
 
 export const routes: RouteObject[] = [
   {
@@ -18,10 +17,6 @@ export const routes: RouteObject[] = [
   {
     path: "/signup",
     Component: Signup,
-  },
-  {
-    path: "/test",
-    Component: TestScreen,
   },
   {
     Component: ProtectedRoute,
