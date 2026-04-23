@@ -1,14 +1,10 @@
-import { Canvas, useFrame, useThree } from "@react-three/fiber";
-import { useGLTF, MeshReflectorMaterial } from "@react-three/drei";
-import { Suspense, useEffect, useRef } from "react";
+import { useThree } from "@react-three/fiber";
+import { Suspense, useEffect } from "react";
 import * as THREE from "three";
 import {
-  Noise,
-  EffectComposer,
   wrapEffect,
-  HueSaturation,
 } from "@react-three/postprocessing";
-import { BlendFunction, GlitchEffect } from "postprocessing";
+import { GlitchEffect } from "postprocessing";
 export const GleetchEffect = wrapEffect(GlitchEffect);
 
 export function CameraOffset() {

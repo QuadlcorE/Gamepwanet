@@ -87,3 +87,74 @@ export interface PaginatedResponse<T> {
   previous: string | null;
   results: T[];
 }
+
+export interface MetacriticPlatform {
+  metascore: number;
+  url: string;
+  platform: {
+    platform: number;
+    name: string;
+    slug: string;
+  };
+}
+
+export interface Screenshot {
+  id:number,
+  image: string,
+  width: number,
+  height: number,
+  is_deleted: boolean,
+}
+
+export interface GameDetail {
+  id: number;
+  slug: string;
+  name: string;
+  name_original: string;
+  description: string;
+  metacritic: number;
+  metacritic_platforms: MetacriticPlatform[];
+  released: string;
+  tba: boolean;
+  updated: string;
+  background_image: string;
+  background_image_additional: string;
+  website: string;
+  rating: number;
+  rating_top: number;
+  ratings: Rating[];
+  reactions: Record<string, number>;
+  added: number;
+  added_by_status: Record<string, number>;
+  playtime: number;
+  screenshots_count: number;
+  movies_count: number;
+  creators_count: number;
+  achievements_count: number;
+  parent_achievements_count: string;
+  reddit_url: string;
+  reddit_name: string;
+  reddit_description: string;
+  reddit_logo: string;
+  reddit_count: number;
+  twitch_count: string;
+  youtube_count: string;
+  reviews_text_count: string;
+  ratings_count: number;
+  suggestions_count: number;
+  alternative_names: string[];
+  metacritic_url: string;
+  parents_count: number;
+  additions_count: number;
+  game_series_count: number;
+  esrb_rating: EsrbRating | null;
+  description_raw?: string;
+  genres?: Array<{ id: number; name: string; slug: string }>;
+  developers?: Array<{ id: number; name: string; slug: string }>;
+  publishers?: Array<{ id: number; name: string; slug: string }>;
+  platforms?: Array<{
+    platform: { id: number; name: string; slug: string };
+    released_at?: string | null;
+  }>;
+  screenshots:Array<Screenshot> | null
+};

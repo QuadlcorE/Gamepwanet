@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router";
 import LoadingThreeDots from "../loadingThreeDots";
 import type { Game } from "../../types/game";
 import env from "../../config/env";
@@ -34,8 +35,9 @@ export default function IndexCarousel() {
     <div className="w-full ">
       <div className="flex h-[60vh] w-full overflow-hidden">
         {data?.map((item) => (
-          <div
+          <Link
             key={item.id}
+            to={`/games/${item.slug}`}
             className="
               group
               relative
@@ -55,7 +57,6 @@ export default function IndexCarousel() {
               backgroundImage: `url(${item.background_image})`,
             }}
           >
-            {/* Bottom gradient overlay */}
             <div
               className="
                 absolute inset-0
@@ -86,7 +87,7 @@ export default function IndexCarousel() {
                 {item.name}
               </h3>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
     </div>

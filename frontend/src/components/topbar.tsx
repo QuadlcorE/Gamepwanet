@@ -1,18 +1,32 @@
-import { useEffect, useState } from "react";
-import { NavLink, useNavigate } from "react-router";
+import { type FormEvent, useEffect, useState } from "react";
+import { NavLink, useLocation, useNavigate } from "react-router";
 import { CircleUserRound, LogOut, UserRound } from "lucide-react";
 import { clearSession, getStoredEmail, isLoggedIn } from "../lib/auth";
 
 export default function TopBar() {
   const navigate = useNavigate();
+  const location = useLocation();
   const [loggedIn, setLoggedIn] = useState(false);
   const [email, setEmail] = useState<string | null>(null);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [searchText, setSearchText] = useState("");
 
   useEffect(() => {
     setLoggedIn(isLoggedIn());
     setEmail(getStoredEmail());
   }, []);
+
+  useEffect(() => {
+    const searchParams = new URLSearchParams(location.search);
+    const queryFromUrl = searchParams.get("q") ?? "";
+
+    if (location.pathname === "/search") {
+      setSearchText(queryFromUrl);
+      return;
+    }
+
+    setSearchText("");
+  }, [location.pathname, location.search]);
 
   function handleLogout() {
     clearSession();
@@ -22,6 +36,19 @@ export default function TopBar() {
     navigate("/");
   }
 
+  function handleSearchSubmit(event: FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    const normalizedSearch = searchText.trim();
+
+    if (!normalizedSearch) {
+      navigate("/search");
+      return;
+    }
+
+    const query = encodeURIComponent(normalizedSearch);
+    navigate(`/search?q=${query}`);
+  }
+
   return (
     <div className="w-full flex items-center justify-between gap-4 px-6 py-4">
       <h1 className="text-4xl font-semibold transition-transform transition-300 hover:scale-110">
@@ -29,13 +56,16 @@ export default function TopBar() {
       </h1>
 
       <div className="flex items-center gap-4">
-        <div className="w-[280px]">
+        <form className="w-[280px]" onSubmit={handleSearchSubmit}>
           <input
             type="text"
             placeholder="Search..."
+            value={searchText}
+            onChange={(event) => setSearchText(event.target.value)}
+            aria-label="Search for a game"
             className="w-full rounded-3xl bg-gray-700 px-4 py-2 opacity-50 outline-none duration-500 hover:opacity-70 focus:opacity-100"
           />
-        </div>
+        </form>
 
         {loggedIn ? (
           <div className="relative">
