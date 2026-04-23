@@ -61,6 +61,34 @@ def retrieve_hot_games_by_month(page_size: int, month: int):
     games = response_json["results"]
     
     return games
+
+def retrieve_weekly_games(page_size: int):
+    start_date = (date.today() - timedelta(days=7)).strftime("%Y-%m-%d")
+    end_date = date.today().strftime("%Y-%m-%d")
+    
+    payload = { "key": api_key, "page_size": page_size, "dates": f"{start_date},{end_date}", "ordering": "-rating"}
+    
+    response = requests.get(url=url, params=payload)
+    response_json = response.json()
+    
+    games = response_json["results"]
+    
+    return games
+
+def retrieve_game_details(game_id: int):
+    curr_url = f"{url}/{game_id}"
+    payload = { "key": api_key}
+    
+    response = requests.get(url=curr_url, params=payload)
+    response_json = response.json()
+    
+    screenshot_url = f"{url}/{game_id}/screenshots"
+    screenshot_payload = {"key": api_key, "page_size": 20}
+    screenshot_response = requests.get(url=screenshot_url, params=screenshot_payload)
+    screenshot_data = screenshot_response.json()
+    response_json["screenshots"] = screenshot_data["results"]
+    
+    return response_json
     
 
 def retrieve_upcoming_games(page_size: int):
@@ -69,6 +97,15 @@ def retrieve_upcoming_games(page_size: int):
     
     payload = { "key": api_key, "page_size": page_size, "dates": f"{start_date},{end_date}", "order": "released"}
     
+    response = requests.get(url=url, params=payload)
+    response_json = response.json()
+    
+    games = response_json["results"]
+    
+    return games
+
+def get_search_game(search: str, page_size: int, page: int):
+    payload = { "key": api_key, "search": search, "page_size": page_size, "page": page }
     response = requests.get(url=url, params=payload)
     response_json = response.json()
     
