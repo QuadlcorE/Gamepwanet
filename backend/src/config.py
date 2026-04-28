@@ -1,8 +1,6 @@
 from pydantic_settings import BaseSettings
 
 class Settings(BaseSettings):
-    RAWG_API_KEY: str
-    RAWG_BASE_URL: str = "https://api.rawg.io/api"
     IGDB_CLIENT_ID: str 
     IGDB_ACCESS_TOKEN: str
     DATABASE_URL: str = "sqlite:///./gamepwanet.db"

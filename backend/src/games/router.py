@@ -168,7 +168,11 @@ def remove_wishlist_item(
 
 
 @router.get("/{game_id}")
-def get_game_details(response: Response, game_id: int | str):
+def get_game_details(
+    response: Response,
+    game_id: int | str,
+    db: Session = Depends(get_db),
+):
     set_public_cache(response)
-    results = retrieve_game_details(game_id)
+    results = retrieve_game_details(game_id, db=db)
     return results

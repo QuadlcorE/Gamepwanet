@@ -10,7 +10,7 @@ class Favourite(Base):
 
     id = Column(Integer, primary_key=True, index=True)
     user_id = Column(Integer, ForeignKey("users.id"), nullable=False)
-    game_id = Column(Integer, nullable=False)          # RAWG game ID
+    game_id = Column(Integer, nullable=False)          # IGDB game ID
     game_slug = Column(String, nullable=False)
     game_name = Column(String, nullable=False)
     game_background_image = Column(String, nullable=True)
@@ -29,7 +29,7 @@ class WishlistItem(Base):
 
     id = Column(Integer, primary_key=True, index=True)
     user_id = Column(Integer, ForeignKey("users.id"), nullable=False)
-    game_id = Column(Integer, nullable=False)          # RAWG game ID
+    game_id = Column(Integer, nullable=False)          # IGDB game ID
     game_slug = Column(String, nullable=False)
     game_name = Column(String, nullable=False)
     game_background_image = Column(String, nullable=True)

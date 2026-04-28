@@ -6,7 +6,11 @@ import httpx
 import os
 from dotenv import load_dotenv
 import calendar
-from datetime import date, timedelta, datetime
+from datetime import date, timedelta, datetime, timezone
+from sqlalchemy.orm import Session
+
+from ..cache.schemas import CachedGameDetailsWrite
+from ..cache.service import get_cached_game_details, upsert_cached_game_details
 from ..errors import IGDBError
 import logging 
 
@@ -58,6 +62,9 @@ def _igdb_query(endpoint: str, body: str) -> list:
 
 
 def retrieve_top_games(page_size: int):
+    """ 
+        This function returns the top.
+    """
     start_ts = _to_unix(date.today() - timedelta(days=30))
     end_ts = _to_unix(date.today())
 
@@ -72,6 +79,9 @@ def retrieve_top_games(page_size: int):
 
 
 def retrieve_hot_games(page_size: int):
+    """
+        This function returns the highest rated games released in the last 60 days
+    """
     start_ts = _to_unix(date.today() - timedelta(days=60))
     end_ts = _to_unix(date.today())
 
@@ -118,6 +128,9 @@ def retrieve_hot_games_by_month(page_size: int, month: int):
 
 
 def retrieve_weekly_games(page_size: int):
+    """ 
+        This returns the currently hot games for that week 
+    """
     start_ts = _to_unix(date.today() - timedelta(days=7))
     end_ts = _to_unix(date.today())
 
@@ -131,7 +144,12 @@ def retrieve_weekly_games(page_size: int):
     return _igdb_query("games", body)
 
 
-def retrieve_game_details(game_slug: str):
+def retrieve_game_details(game_slug: str, *, db: Session):
+    cache_key = f"igdb:slug:{str(game_slug).strip().lower()}"
+    cached = get_cached_game_details(db, cache_key=cache_key)
+    if cached is not None:
+        return cached.payload
+
     body = (
         "fields id,name,first_release_date,rating,rating_count,cover.url,"
         "genres.name,platforms.name,summary,slug,storyline,"
@@ -152,10 +170,22 @@ def retrieve_game_details(game_slug: str):
     )
     game["screenshots"] = _igdb_query("screenshots", screenshot_body)
 
+    upsert_cached_game_details(
+        db,
+        CachedGameDetailsWrite(
+            cache_key=cache_key,
+            payload=game,
+            expires_at=datetime.now(timezone.utc) + timedelta(hours=6),
+        ),
+    )
+
     return game
 
 
 def retrieve_upcoming_games(page_size: int):
+    """ 
+        This returns the top upcoming games ffor the next 30 days.
+    """
     start_ts = _to_unix(date.today())
     end_ts = _to_unix(date.today() + timedelta(days=30))
 
