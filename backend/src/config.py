@@ -1,11 +1,13 @@
-from pydantic_settings import BaseSettings
+from typing import Annotated
+
+from pydantic_settings import BaseSettings, NoDecode
 from pydantic import field_validator
 
 class Settings(BaseSettings):
     IGDB_CLIENT_ID: str 
     IGDB_ACCESS_TOKEN: str
     DATABASE_URL: str = "sqlite:///./gamepwanet.db"
-    FRONTEND_ORIGINS: list[str] = ["https://gamepwanet.vercel.app"]
+    FRONTEND_ORIGINS: Annotated[list[str], NoDecode] = ["https://gamepwanet.vercel.app"]
 
     # JWT
     SECRET_KEY: str
