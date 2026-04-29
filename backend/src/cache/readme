@@ -1,0 +1,30 @@
+# IGDB Cache Scaffold
+
+This folder is structured so we can cleanly support:
+- caching IGDB game details payloads
+
+## File responsibilities
+
+- `models.py`
+Defines SQLAlchemy table for cached game payloads.
+
+- `schemas.py`
+Defines DTOs exchanged between service and repository layers.
+
+- `repository.py`
+Owns SQLAlchemy queries only (find, create, update token/cache rows).
+
+- `service.py`
+Owns orchestration logic (cache hit/miss, TTL decisions).
+
+- `database.py`
+Compatibility shim mapped to shared app DB session.
+
+## Cross-module flow (target)
+
+1. `games` asks for game details.
+2. `cache.service` checks cache by IGDB key.
+3. On hit and not expired, return cached merged payload.
+4. On miss/expired, fetch fresh IGDB data.
+5. Store payload in cache table with TTL.
+6. Return merged payload.
