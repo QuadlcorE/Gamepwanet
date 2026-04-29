@@ -1,6 +1,7 @@
 import logging
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from .config import settings
 from .games import router as games_router
 from .users import router as user_router
 from .auth import router as auth_router
@@ -26,7 +27,7 @@ Base.metadata.create_all(bind=engine)
 app = FastAPI()
 app.add_exception_handler(IGDBError, igdb_error_handler)
 
-origins = ["*"]
+origins = settings.FRONTEND_ORIGINS
 
 
 app.add_middleware(
