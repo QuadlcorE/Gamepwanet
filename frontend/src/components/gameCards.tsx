@@ -3,13 +3,27 @@ import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
 import LoadingThreeDots from "./loadingThreeDots";
 import { Link } from "react-router";
+import { igdbImageUrl } from "../lib/igdb-image";
 
 type gameCard = {
   gameData: Game;
   loadingState: boolean;
 };
 
+function formatReleaseDate(value?: number) {
+  if (!value) {
+    return "Release date TBD";
+  }
+  return new Date(value * 1000).toLocaleDateString(undefined, {
+    year: "numeric",
+    month: "short",
+    day: "numeric",
+  });
+}
+
 export default function GameCard(gameCard: gameCard) {
+  const coverImage = igdbImageUrl(gameCard.gameData.cover?.url, "cover_big");
+
   if (gameCard.loadingState) {
     return (
       <div className="w-full max-w-80 aspect-square flex items-center justify-center bg-[#111]">
@@ -48,22 +62,30 @@ export default function GameCard(gameCard: gameCard) {
             bg-cover bg-center
           "
           style={{
-            backgroundImage: `url('${gameCard.gameData.background_image}')`,
+            backgroundImage: coverImage ? `url('${coverImage}')` : undefined,
           }}
         />
 
         <div className="m-1.5 rounded-xl overflow-hidden bg-black  border border-white/20 z-10">
-          <img
-            src={gameCard.gameData.background_image}
-            alt={gameCard.gameData.name}
-            className="w-full h-36 object-cover"
-          />
+          {coverImage ? (
+            <img
+              src={coverImage}
+              alt={gameCard.gameData.name}
+              className="w-full h-36 object-cover"
+            />
+          ) : (
+            <div className="w-full h-36 flex items-center justify-center bg-white/10 text-white/50 text-sm">
+              No cover image
+            </div>
+          )}
 
           <div className="px-4 py-3">
             <h2 className="text-white font-semibold text-sm tracking-wide">
               {gameCard.gameData.name}
             </h2>
-            <p className="text-white/60 text-xs mt-0.5">Release Date: {gameCard.gameData.released}</p>
+            <p className="text-white/60 text-xs mt-0.5">
+              Release Date: {formatReleaseDate(gameCard.gameData.first_release_date)}
+            </p>
           </div>
         </div>
       </Link>

@@ -8,6 +8,7 @@ import LoadingThreeDots from "../components/loadingThreeDots";
 import env from "../config/env";
 import type { GameDetail } from "../types/game";
 import type { GliderMethods } from "react-glider/dist/types";
+import { igdbImageUrl } from "../lib/igdb-image";
 
 function formatDate(value?: string | null) {
   if (!value) {
@@ -27,6 +28,14 @@ function formatDate(value?: string | null) {
   });
 }
 
+function formatUnixDate(value?: number) {
+  if (!value) {
+    return "TBA";
+  }
+
+  return formatDate(new Date(value * 1000).toISOString());
+}
+
 function joinNames(items?: Array<{ name: string }>) {
   if (!items?.length) {
     return "Unknown";
@@ -40,7 +49,7 @@ export default function GameDetailsPage() {
   const [game, setGame] = useState<GameDetail | null>(null);
   const [isLoading, setIsLoading] = useState(true);
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
-  const [selectedScreenshot, setSelectedScreenshot] = useState<string | null>(null);
+  const [selectedScreenshotIndex, setSelectedScreenshotIndex] = useState<number | null>(null);
   const screenshotIndexRef = useRef(0);
   const screenshotGliderRef = useRef<GliderMethods | null>(null);
 
@@ -76,13 +85,23 @@ export default function GameDetailsPage() {
   }, [gameId]);
 
   useEffect(() => {
-    if (!selectedScreenshot) {
+    if (selectedScreenshotIndex === null) {
       return;
     }
 
     function onKeyDown(event: KeyboardEvent) {
       if (event.key === "Escape") {
-        setSelectedScreenshot(null);
+        setSelectedScreenshotIndex(null);
+      } else if (event.key === "ArrowRight" && game?.screenshots?.length) {
+        setSelectedScreenshotIndex((previous) => {
+          if (previous === null) return previous;
+          return previous + 1 >= game.screenshots!.length ? 0 : previous + 1;
+        });
+      } else if (event.key === "ArrowLeft" && game?.screenshots?.length) {
+        setSelectedScreenshotIndex((previous) => {
+          if (previous === null) return previous;
+          return previous - 1 < 0 ? game.screenshots!.length - 1 : previous - 1;
+        });
       }
     }
 
@@ -90,12 +109,12 @@ export default function GameDetailsPage() {
     return () => {
       window.removeEventListener("keydown", onKeyDown);
     };
-  }, [selectedScreenshot]);
+  }, [game?.screenshots, selectedScreenshotIndex]);
 
   useEffect(() => {
     const screenshots = game?.screenshots ?? [];
 
-    if (!screenshots.length || selectedScreenshot) {
+    if (!screenshots.length || selectedScreenshotIndex !== null) {
       return;
     }
 
@@ -111,14 +130,14 @@ export default function GameDetailsPage() {
     return () => {
       window.clearInterval(autoplay);
     };
-  }, [game?.screenshots?.length, selectedScreenshot]);
+  }, [game?.screenshots?.length, selectedScreenshotIndex]);
 
   useEffect(() => {
     screenshotIndexRef.current = 0;
   }, [game?.screenshots?.length]);
 
   useEffect(() => {
-    if (!selectedScreenshot) {
+    if (selectedScreenshotIndex === null) {
       return;
     }
 
@@ -128,7 +147,7 @@ export default function GameDetailsPage() {
     return () => {
       document.body.style.overflow = overflow;
     };
-  }, [selectedScreenshot]);
+  }, [selectedScreenshotIndex]);
 
   if (isLoading) {
     return (
@@ -173,10 +192,50 @@ export default function GameDetailsPage() {
     );
   }
 
-  const heroImage =
-    game.background_image ?? game.background_image_additional ?? "";
-  const headerImage = game.background_image_additional ?? "";
+  const heroImage = igdbImageUrl(
+    game.cover?.url ?? game.artworks?.[0]?.url,
+    "720p"
+  );
+  const headerImage = igdbImageUrl(
+    game.artworks?.[0]?.url ?? game.cover?.url,
+    "1080p"
+  );
   const screenshots = game.screenshots ?? [];
+  const developers = (game.involved_companies ?? [])
+    .filter((company) => company.developer)
+    .map((company) => company.company);
+  const publishers = (game.involved_companies ?? [])
+    .filter((company) => !company.developer)
+    .map((company) => company.company);
+  const website = game.websites?.[0]?.url;
+  const selectedScreenshot =
+    selectedScreenshotIndex === null
+      ? null
+      : igdbImageUrl(screenshots[selectedScreenshotIndex]?.url, "1080p");
+
+  function showPreviousScreenshot() {
+    if (!screenshots.length) {
+      return;
+    }
+    setSelectedScreenshotIndex((previous) => {
+      if (previous === null) {
+        return 0;
+      }
+      return previous - 1 < 0 ? screenshots.length - 1 : previous - 1;
+    });
+  }
+
+  function showNextScreenshot() {
+    if (!screenshots.length) {
+      return;
+    }
+    setSelectedScreenshotIndex((previous) => {
+      if (previous === null) {
+        return 0;
+      }
+      return previous + 1 >= screenshots.length ? 0 : previous + 1;
+    });
+  }
 
   return (
     <>
@@ -216,7 +275,8 @@ export default function GameDetailsPage() {
                       {game.name}
                     </h1>
                     <p className="max-w-3xl text-base leading-7 text-white/75 sm:text-lg">
-                      {game.description_raw?.trim() ||
+                      {game.summary?.trim() ||
+                        game.storyline?.trim() ||
                         "No description is available for this title yet."}
                     </p>
                   </div>
@@ -227,7 +287,7 @@ export default function GameDetailsPage() {
                         Release
                       </p>
                       <p className="mt-3 text-lg font-semibold">
-                        {formatDate(game.released)}
+                        {formatUnixDate(game.first_release_date)}
                       </p>
                     </div>
                     <div className="rounded-3xl border border-white/10 bg-white/5 p-5">
@@ -235,23 +295,23 @@ export default function GameDetailsPage() {
                         Rating
                       </p>
                       <p className="mt-3 text-lg font-semibold">
-                        {game.rating ? `${game.rating}/5` : "Unrated"}
+                        {game.rating ? `${(game.rating / 20).toFixed(1)}/5` : "Unrated"}
                       </p>
                     </div>
                     <div className="rounded-3xl border border-white/10 bg-white/5 p-5">
                       <p className="text-xs uppercase tracking-[0.3em] text-white/40">
-                        Metacritic
+                        Ratings
                       </p>
                       <p className="mt-3 text-lg font-semibold">
-                        {game.metacritic ?? "N/A"}
+                        {game.rating_count ?? "N/A"}
                       </p>
                     </div>
                     <div className="rounded-3xl border border-white/10 bg-white/5 p-5">
                       <p className="text-xs uppercase tracking-[0.3em] text-white/40">
-                        Playtime
+                        Slug
                       </p>
                       <p className="mt-3 text-lg font-semibold">
-                        {game.playtime ? `${game.playtime} hrs` : "Unknown"}
+                        {game.slug}
                       </p>
                     </div>
                   </div>
@@ -286,7 +346,7 @@ export default function GameDetailsPage() {
                     Developers
                   </p>
                   <p className="mt-4 text-sm leading-6 text-white/80">
-                    {joinNames(game.developers)}
+                    {joinNames(developers)}
                   </p>
                 </div>
                 <div className="rounded-3xl border border-white/10 bg-neutral-950/70 p-6">
@@ -294,15 +354,15 @@ export default function GameDetailsPage() {
                     Publishers
                   </p>
                   <p className="mt-4 text-sm leading-6 text-white/80">
-                    {joinNames(game.publishers)}
+                    {joinNames(publishers)}
                   </p>
                 </div>
                 <div className="rounded-3xl border border-white/10 bg-neutral-950/70 p-6">
                   <p className="text-xs uppercase tracking-[0.3em] text-white/40">
-                    ESRB
+                    Reviews
                   </p>
                   <p className="mt-4 text-sm leading-6 text-white/80">
-                    {game.esrb_rating?.name ?? "Not rated"}
+                    {game.rating_count ?? "Unknown"}
                   </p>
                 </div>
               </section>
@@ -315,12 +375,10 @@ export default function GameDetailsPage() {
                   {game.platforms?.length ? (
                     game.platforms.map((entry) => (
                       <span
-                        key={`${entry.platform.id}-${
-                          entry.released_at ?? "na"
-                        }`}
+                        key={entry.id}
                         className="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-white/85"
                       >
-                        {entry.platform.name}
+                        {entry.name}
                       </span>
                     ))
                   ) : (
@@ -366,16 +424,16 @@ export default function GameDetailsPage() {
                       },
                     ]}
                   >
-                    {screenshots.map((shot) => (
+                    {screenshots.map((shot, index) => (
                       <div key={shot.id} className="px-2">
                         <button
                           type="button"
-                          onClick={() => setSelectedScreenshot(shot.image)}
+                          onClick={() => setSelectedScreenshotIndex(index)}
                           className="block w-full overflow-hidden rounded-2xl border border-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/80"
                           aria-label={`Open ${game.name} screenshot ${shot.id}`}
                         >
                           <img
-                            src={shot.image}
+                            src={igdbImageUrl(shot.url, "720p")}
                             alt={`${game.name} screenshot ${shot.id}`}
                             className="h-52 w-full object-cover transition hover:scale-[1.02] sm:h-60"
                           />
@@ -386,10 +444,10 @@ export default function GameDetailsPage() {
                 </section>
               ) : null}
 
-              {game.website ? (
+              {website ? (
                 <section>
                   <a
-                    href={game.website}
+                    href={website}
                     target="_blank"
                     rel="noreferrer"
                     className="inline-flex rounded-full bg-white px-5 py-3 text-sm font-semibold text-black transition hover:opacity-85"
@@ -406,19 +464,35 @@ export default function GameDetailsPage() {
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 p-4">
           <button
             type="button"
-            onClick={() => setSelectedScreenshot(null)}
+            onClick={() => setSelectedScreenshotIndex(null)}
             className="absolute inset-0 h-full w-full cursor-pointer"
             aria-label="Close screenshot preview"
           />
+          <button
+            type="button"
+            onClick={() => setSelectedScreenshotIndex(null)}
+            className="absolute right-4 top-4 z-30 flex h-10 w-10 items-center justify-center rounded-full border border-white/30 bg-black/50 text-lg font-semibold text-white transition hover:bg-black/80"
+            aria-label="Close screenshot preview"
+          >
+            X
+          </button>
+          <button
+            type="button"
+            onClick={showPreviousScreenshot}
+            className="absolute left-4 top-1/2 z-20 -translate-y-1/2 rounded-full border border-white/30 bg-black/50 px-4 py-3 text-sm font-semibold text-white transition hover:bg-black/80"
+            aria-label="Previous screenshot"
+          >
+            Prev
+          </button>
+          <button
+            type="button"
+            onClick={showNextScreenshot}
+            className="absolute right-4 top-1/2 z-20 -translate-y-1/2 rounded-full border border-white/30 bg-black/50 px-4 py-3 text-sm font-semibold text-white transition hover:bg-black/80"
+            aria-label="Next screenshot"
+          >
+            Next
+          </button>
           <div className="relative z-10">
-            <button
-              type="button"
-              onClick={() => setSelectedScreenshot(null)}
-              className="absolute right-3 top-3 flex h-10 w-10 items-center justify-center rounded-full border border-white/30 bg-black/50 text-lg font-semibold text-white transition hover:bg-black/80"
-              aria-label="Close screenshot preview"
-            >
-              X
-            </button>
             <img
               src={selectedScreenshot}
               alt={`${game.name} fullscreen screenshot`}

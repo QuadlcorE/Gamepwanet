@@ -12,13 +12,13 @@ from .auth import models as auth_models  # noqa: F401
 from .users import models as user_models  # noqa: F401
 from .cache import models as cache_models  # noqa: F401
 
-logging.basicConfig(
-    level=logging.DEBUG,
-    format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
-    handlers=[
-        logging.StreamHandler(),
-    ]
-)
+# logging.basicConfig(
+#     level=logging.DEBUG,
+#     format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+#     handlers=[
+#         logging.StreamHandler(),
+#     ]
+# )
 
 # Create all tables on startup
 Base.metadata.create_all(bind=engine)

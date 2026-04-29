@@ -3,6 +3,7 @@ import { Link } from "react-router";
 import LoadingThreeDots from "../loadingThreeDots";
 import type { Game } from "../../types/game";
 import env from "../../config/env";
+import { igdbImageUrl } from "../../lib/igdb-image";
 
 export default function IndexCarousel() {
   const [data, setData] = useState<Array<Game>>();
@@ -54,7 +55,7 @@ export default function IndexCarousel() {
               overflow-hidden
             "
             style={{
-              backgroundImage: `url(${item.background_image})`,
+              backgroundImage: `url(${igdbImageUrl(item.cover?.url, "1080p")})`,
             }}
           >
             <div
