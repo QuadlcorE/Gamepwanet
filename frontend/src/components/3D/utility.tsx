@@ -1,5 +1,5 @@
 import { useThree } from "@react-three/fiber";
-import { Suspense, useEffect } from "react";
+import { useEffect } from "react";
 import * as THREE from "three";
 import {
   wrapEffect,
