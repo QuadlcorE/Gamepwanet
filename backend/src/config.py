@@ -7,7 +7,11 @@ class Settings(BaseSettings):
     IGDB_CLIENT_ID: str 
     IGDB_ACCESS_TOKEN: str
     DATABASE_URL: str = "sqlite:///./gamepwanet.db"
-    FRONTEND_ORIGINS: Annotated[list[str], NoDecode] = ["https://gamepwanet.vercel.app"]
+    FRONTEND_ORIGINS: Annotated[list[str], NoDecode] = [
+        "https://gamepwanet.vercel.app",
+        "http://localhost:5173",
+        "http://127.0.0.1:5173",
+    ]
 
     # JWT
     SECRET_KEY: str
