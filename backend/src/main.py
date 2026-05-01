@@ -24,7 +24,11 @@ from .cache import models as cache_models  # noqa: F401
 # Create all tables on startup
 Base.metadata.create_all(bind=engine)
 
-app = FastAPI()
+app = FastAPI(
+    docs_url="/api/docs",
+    redoc_url="/api/redoc",
+    openapi_url="/api/openapi.json",
+)
 app.add_exception_handler(IGDBError, igdb_error_handler)
 
 origins = settings.FRONTEND_ORIGINS
@@ -42,3 +46,9 @@ app.include_router(games_router.router)
 app.include_router(user_router.router)
 app.include_router(user_router.profile_router)
 app.include_router(auth_router.router)
+
+# Vercel forwards requests with /api prefix; keep local routes without prefix too.
+app.include_router(games_router.router, prefix="/api")
+app.include_router(user_router.router, prefix="/api")
+app.include_router(user_router.profile_router, prefix="/api")
+app.include_router(auth_router.router, prefix="/api")
